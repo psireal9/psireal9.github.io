@@ -16,6 +16,6 @@ All that being said, I will structure my webpage into 2 parts as following:
 
 
 
-Have questions or suggestions? Feel free to [send me an email]("< a href="mailto:nguyed99@zedat.fu-berlin.de">Jung< /a>") or [ask me on Twitter](https://twitter.com/psireal99).
+Have questions or suggestions? Feel free to [send me an email](mailto:nguyed99@zedat.fu-berlin.de) or [ask me on Twitter](https://twitter.com/psireal99).
 
 Thanks for reading!
