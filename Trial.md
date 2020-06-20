@@ -1,5 +1,8 @@
 # Title
-
+---
+layout: page
+title: Trial
+---
 
 
 ```python
