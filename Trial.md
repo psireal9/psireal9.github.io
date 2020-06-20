@@ -1,7 +1,6 @@
-# Trial
 ---
 layout: page
-title: Jung
+title: Trial
 ---
 
 
