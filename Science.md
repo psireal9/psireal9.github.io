@@ -3,4 +3,4 @@ layout: page
 title: Science
 ---
 
-* **Lab work** ![Activity Coefficient](/acticoeff)
+* **Lab work** ![Activity Coefficient](/activcoeff)
