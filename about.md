@@ -12,7 +12,7 @@ Few words about myself. Normally, I would like to keep a low profile and stay an
 All that being said, I will structure my webpage into 2 parts as following:
 * **Science** (*e.g. Statistical Thermodynamics, Kinetics, Molecular Dynamics, etc*)
 * **Math** (*Alogorithms for Interpolation, Integration, ODE, etc*)
-* **Others** (Stuffs that I find interesting and about which I want to share my perspective)
+* **Others** (*Stuffs that I find interesting and about which I want to share my perspective*)
 
 
 
