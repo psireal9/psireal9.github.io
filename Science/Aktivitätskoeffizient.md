@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Activity coefficient
+permalink: "/activcoeff"
 ---
 
 ```python
