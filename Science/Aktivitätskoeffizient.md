@@ -186,5 +186,5 @@ m1 = ransac.estimator_.coef_[0]
 
 
 ```
-![img](images/pSFqt3l24y-comp-1_3.gif)
+[img](images/pSFqt3l24y-comp-1_3.gif)
 
