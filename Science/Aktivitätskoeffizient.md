@@ -1,5 +1,5 @@
 ---
-layout: published
+layout: page
 title: Activity coefficient
 ---
 
