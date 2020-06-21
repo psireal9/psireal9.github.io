@@ -1,5 +1,5 @@
 ---
-layout: published
+layout: post
 title: Trial
 ---
 
