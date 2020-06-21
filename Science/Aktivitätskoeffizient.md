@@ -1,3 +1,8 @@
+---
+layout: page
+title: Activity coefficient
+---
+
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
