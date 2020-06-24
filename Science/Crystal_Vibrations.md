@@ -15,11 +15,11 @@ Einstein solid is a model of solid based on 2 assumptions:
 
 <u>Reality:</u>
 
-A solid is, indeed, comprised of **independent oscillations**, these oscillations are collective(normal) modes involving many atoms. $\nu_{vib}$
+A solid is, indeed, comprised of **independent oscillations**, these oscillations are collective(normal) modes involving many atoms. 
 
 In Einstein model, **each atom** oscillates independently.
 
-<font size="3px"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo <b>harmonic motion</b>, have the same <img src="https://render.githubusercontent.com/render/math?math=e^1"> and move in phase but generally with <b>differrent amplitudes</b>.  </em> </font> 
+<font size="3px"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo <b>harmonic motion</b>, have the same <img src="https://render.githubusercontent.com/render/math?math=\nu_{vib}"> and move in phase but generally with <b>differrent amplitudes</b>.  </em> </font> 
 
 <u>Why is it important?</u>
 * The Einstein model employed Planck's quantization assumption -> Important piece of evidence for the need of quantization
