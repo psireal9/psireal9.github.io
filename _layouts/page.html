@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<html>
+  <head>
+{% if page.use_math %}
+      {% include mathjax_support %}
+    {% endif %}
+  </head>
+</html>
 
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
