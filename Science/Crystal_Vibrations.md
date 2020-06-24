@@ -1,4 +1,7 @@
-# Introduction
+---
+layout: post
+title: Crystal vibrations
+---
 
 <u> Motivation </u>
 * Study 2 model systems that represent the vibrations of a crystal
