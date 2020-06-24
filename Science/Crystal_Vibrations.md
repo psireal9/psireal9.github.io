@@ -1,4 +1,7 @@
-# Introduction
+---
+layout: post
+title: Crystal Vibrations
+---
 
 <u> Motivation </u>
 * Study 2 model systems that represent the vibrations of a crystal
@@ -17,7 +20,6 @@ A solid is, indeed, comprised of **independent oscillations**, these oscillation
 In Einstein model, **each atom** oscillates independently.
 
 <font size="1"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo **harmonic motion**, have the same $\nu_{vib}$ and move in phase but generally with **differrent amplitudes** </em> </font> 
-
 
 <u>Why is it important?</u>
 * The Einstein model employed Planck's quantization assumption -> Important piece of evidence for the need of quantization
