@@ -4,9 +4,7 @@ title: Crystal Vibrations
 use_math:true
 ---
 
-{% if page.use_math %}
-   {% include mathjax_support %}
-{% endif %}
+
 
 <u> Motivation </u>
 * Study 2 model systems that represent the vibrations of a crystal
