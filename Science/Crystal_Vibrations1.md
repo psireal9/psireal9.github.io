@@ -1,5 +1,10 @@
-# Introduction
-
+---
+layout: post
+title: Crystal Vibrations
+---
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  
 <u> Motivation </u>
 * Study 2 model systems that represent the vibrations of a crystal
     1. Einstein Crystal Model
