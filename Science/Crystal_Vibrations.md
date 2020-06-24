@@ -19,7 +19,7 @@ A solid is, indeed, comprised of **independent oscillations**, these oscillation
 
 In Einstein model, **each atom** oscillates independently.
 
-<font size="1"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo **harmonic motion**, have the same ![equation](https://latex2image.joeraut.com/output/img-1bca377322061a02.png) and move in phase but generally with **differrent amplitudes** </em> </font> 
+<font size="2"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo **harmonic motion**, have the same <img src="https://latex2image.joeraut.com/output/img-1bca377322061a02.png"> and move in phase but generally with **differrent amplitudes** </em> </font> 
 
 <u>Why is it important?</u>
 * The Einstein model employed Planck's quantization assumption -> Important piece of evidence for the need of quantization
