@@ -1,7 +1,12 @@
 ---
 layout: post
 title: Crystal Vibrations
+use_math:true
 ---
+
+{% if page.use_math %}
+   {% include mathjax_support %}
+{% endif %}
 
 <u> Motivation </u>
 * Study 2 model systems that represent the vibrations of a crystal
@@ -15,7 +20,7 @@ Einstein solid is a model of solid based on 2 assumptions:
 
 <u>Reality:</u>
 
-A solid is, indeed, comprised of **independent oscillations**, these oscillations are collective(normal) modes involving many atoms. 
+A solid is, indeed, comprised of **independent oscillations**, these oscillations are collective(normal) modes involving many atoms. $\nu_{vib}$
 
 In Einstein model, **each atom** oscillates independently.
 
