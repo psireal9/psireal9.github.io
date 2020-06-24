@@ -35,7 +35,10 @@ In Einstein model, **each atom** oscillates independently.
 
 * The vibration of each of these normal modes can be described in which you employ the QM model for vibrational DOF which is the **harmonic oscillator**. In this case, all of these independent harmonic oscillators will have the same specific ground state frequency $\nu$
 
-From the post *Molecular Partition Functions*, we know that the single-particle total vibrational partion function is given by ![equation](https://latex2image.joeraut.com/output/img-e11b879112015d32.png)
+From the post *Molecular Partition Functions*, we know that the single-particle total vibrational partion function is given by 
+<p align="center">
+![equation](https://latex2image.joeraut.com/output/img-e11b879112015d32.png)
+</p>
 
 The relation between the canonical partition function $Q$ and the unit partition function $q$ is
 $$Q=q^{N} \quad \text{for}\quad N \quad \text{distinguishable units} \quad [Eq.2]$$
