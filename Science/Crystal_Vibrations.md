@@ -19,7 +19,7 @@ A solid is, indeed, comprised of **independent oscillations**, these oscillation
 
 In Einstein model, **each atom** oscillates independently.
 
-<font size="2"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo **harmonic motion**, have the same <img src="https://latex2image.joeraut.com/output/img-1bca377322061a02.png"> and move in phase but generally with **differrent amplitudes** </em> </font> 
+<font size="1"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo **harmonic motion**, have the same <img src="https://render.githubusercontent.com/render/math?math=e^{i +\pi} =x+1"> and move in phase but generally with **differrent amplitudes** </em> </font> 
 
 <u>Why is it important?</u>
 * The Einstein model employed Planck's quantization assumption -> Important piece of evidence for the need of quantization
@@ -37,7 +37,7 @@ In Einstein model, **each atom** oscillates independently.
 
 From the post *Molecular Partition Functions*, we know that the single-particle total vibrational partion function is given by 
 <p align="center">
-  <img src="https://latex2image.joeraut.com/output/img-e11b879112015d32.png">
+  <img width="460" height="300" src="https://latex2image.joeraut.com/output/img-e11b879112015d32.png">
 </p>
 
 The relation between the canonical partition function $Q$ and the unit partition function $q$ is
