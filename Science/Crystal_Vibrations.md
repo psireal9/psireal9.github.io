@@ -20,7 +20,7 @@ A solid is, indeed, comprised of **independent oscillations**, these oscillation
 In Einstein model, **each atom** oscillates independently.
 
 
-<font size="3px"> <em><p>Normal mode of vibration: a vibration in which all the nuclei undergo <b>harmonic motion</b>, have the same bleh <img src="https://render.githubusercontent.com/render/math?math=\nu_{vib}" /> and move in phase but generally with <b>differrent amplitudes</b>.</p>  </em> </font> 
+<font size="3px"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo <b>harmonic motion</b>, have the same <img src="https://render.githubusercontent.com/render/math?math=\nu_{vib}" /> and move in phase but generally with <b>differrent amplitudes</b>. </em> </font> 
 
 
 <u>Why is it important?</u>
