@@ -75,17 +75,24 @@ You can find other formulas for other thermodynamic functions of the Einstein Mo
 * Pressure in Einstein Model
 
 It is not obvious from [Eq.5] how $\ln (\mathcal{Z})$ is related to $V$. A possible way to tackle this is to use $G=A+P V$
-$$A=-k_{\mathrm{B}} T \ln (\mathcal{Z})=U_{0}+3 N k_{\mathrm{B}} T \ln \left(1-e^{-h v / k_{\mathrm{B}} T}\right)$$
-
-$$\begin{aligned}
+<p align="center">
+  $$A=-k_{\mathrm{B}} T \ln (\mathcal{Z})=U_{0}+3 N k_{\mathrm{B}} T \ln \left(1-e^{-h v / k_{\mathrm{B}} T}\right)$$
+</p>
+<p align="center">
+  $$\begin{aligned}
 G &=N \mu=U_{0}-3 N k_{\mathrm{B}} T \ln (z) \\
 &=U_{0}+3 N k_{\mathrm{B}} T \ln \left(1-e^{-h v / k_{\mathrm{B}} T}\right)
 \end{aligned}$$
+</p>
 
 This means $G=A$. What does this imply?
-
-$$\text{Enthalpy}: \quad H \stackrel{\text { def }}{=} U+p V$$
-$$\text{Helmholtz Energy:} \quad A \stackrel{\text { def }}{=} U -TS $$
-$$\text{Gibbs Energy:} \quad G \stackrel{\text { def }}{=} U -TS + pV = H -TS $$
-
+<p align="center">
+  $$\text{Enthalpy}: \quad H \stackrel{\text { def }}{=} U+p V$$
+</p>
+<p align="center">
+  $$\text{Helmholtz Energy:} \quad A \stackrel{\text { def }}{=} U -TS $$
+</p>
+<p align="center">
+  $$\text{Gibbs Energy:} \quad G \stackrel{\text { def }}{=} U -TS + pV = H -TS $$
+</p>
 This means $U=H$ and $pV=0$. The term $pV$ represents the work that would required to "make room" for the system by pushing the atmospheric pressure. Thus, in a way, the Einstein Model suggests the solid exists in a vacuum (where $p=0$) because the solid, of course, does have a volume!
