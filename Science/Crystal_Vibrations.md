@@ -52,23 +52,30 @@ The relation between the canonical partition function $Q$ and the unit partition
 </p>
 For a monoatomic crystal with $N$ atoms, its vibrational energy is given by
 <p align="center">
+  <a name="eq3">
   $$ E_{\mathrm{vib}}=U_{0}+\sum_{i=1}^{3 N-6} h v \nu_{i} \approx U_{0}+\sum_{i=1}^{3 N} h v \nu_{i} \quad [Eq.3]$$
+    </a>
 </p>
 
 where $U_{0}$ is the crystal's ground vibrational energy. For a crystal with large number of atoms $N$, the number of normal modes $3N-6$ can be replaced with $3N$.
 
-Combining [[Eq.1]](#abcde), [[Eq.2]](#cde), and [Eq.3], we can see that the canonical partition function for the whole crystal is
+Combining [[Eq.1]](#abcde), [[Eq.2]](#cde), and [[Eq.3]](#eq3), we can see that the canonical partition function for the whole crystal is
 <p align="center">
+  <a name="eq4">
   $$Q=e^{-U_{0} / k_{\mathrm{B}} T} q^{3 N} [Eq.4]$$
+   </a>
 </p>
 
-[Eq.4] makes sense since $U_{0}$ is only a constant so when you take the exponential of [Eq.3], you can bring $e^{-U_{0} / k_{\mathrm{B}} T}$ out of the summation and product. What's left is $\prod_{i=1}^{3 N}\left(\sum_{v_{i}=0}^{\infty} e^{-h \nu v_{i} / k_{\mathrm{B}} T}\right) $ and since all normal modes share the same frequency $\nu$, hence the product can be written in terms of power $\left(\sum_{i=0}^{\infty} e^{-h \nu v_{i} / k_{\mathrm{B}} T}\right)^{3 N}$. [Eq.4] is therefore linked with [Eq.2] because the normal modes are distinguishable from each other. In other words, the vibrational DOF are separable!
+[[Eq.4]](#eq4) makes sense since $U_{0}$ is only a constant so when you take the exponential of [[Eq.3]](#eq3), you can bring $e^{-U_{0} / k_{\mathrm{B}} T}$ out of the summation and product. What's left is $\prod_{i=1}^{3 N}\left(\sum_{v_{i}=0}^{\infty} e^{-h \nu v_{i} / k_{\mathrm{B}} T}\right) $ and since all normal modes share the same frequency $\nu$, hence the product can be written in terms of power $\left(\sum_{i=0}^{\infty} e^{-h \nu v_{i} / k_{\mathrm{B}} T}\right)^{3 N}$. [[Eq.4]](#eq4) is therefore linked with [[Eq.2]](#cde) because the normal modes are distinguishable from each other. In other words, the vibrational DOF are separable!
 
-The second step involves determining $\ln Q$ as you can derive other thermodynamic functions when you have it! You now can insert the formula for $q_{vib}$ into [Eq.4]
+The second step involves determining $\ln Q$ as you can derive other thermodynamic functions when you have it! You now can insert the formula for $q_{vib}$ into 
+[[Eq.4]](#eq4)
 <p align="center">
+  <a name="eq5">
   $$\begin{aligned} \ln (\mathcal{Z}) &=-\frac{U_{0}}{k_{\mathrm{B}} T}+3 N \ln (z)=-\frac{U_{0}}{k_{\mathrm{B}} T}+3 N \ln \left(\frac{1}{1-e^{-h \nu / k_{\mathrm{B}} T}}\right) \\
 
 &=-\frac{U_{0}}{k_{\mathrm{B}} T}-3 N \ln \left(1-e^{-h \nu / k_{\mathrm{B}} T}\right) \end{aligned} [Eq.5]$$
+  </a>
 </p>
 
 I find the derivation of heat capacity from [Wikipedia](https://en.wikipedia.org/wiki/Einstein_solid) quite thorough and understandable. The article also reminds you about counting problem of Bosons and Fermions because the first follows **Bose-Einstein statistics** and the latter follows **Fermi-Dirac statistics**. Anyhoo, if you have time, take a quick look!
@@ -78,7 +85,7 @@ You can find other formulas for other thermodynamic functions of the Einstein Mo
 <u>Problem:</u>
 * Pressure in Einstein Model
 
-It is not obvious from [Eq.5] how $\ln (\mathcal{Z})$ is related to $V$. A possible way to tackle this is to use $G=A+P V$
+It is not obvious from [[Eq.5]](#eq5) how $\ln (\mathcal{Z})$ is related to $V$. A possible way to tackle this is to use $G=A+P V$
 <p align="center">
   $$A=-k_{\mathrm{B}} T \ln (\mathcal{Z})=U_{0}+3 N k_{\mathrm{B}} T \ln \left(1-e^{-h v / k_{\mathrm{B}} T}\right)$$
 </p>
