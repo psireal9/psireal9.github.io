@@ -62,7 +62,7 @@ Combining [Eq.1], [Eq.2], and [Eq.3], we can see that the canonical partition fu
 
 The second step involves determining $\ln Q$ as you can derive other thermodynamic functions when you have it! You now can insert the formula for $q_{vib}$ into [Eq.4]
 
-$$\begin{aligned} \ln (\mathcal{Z}) &=-\frac{U_{0}}{k_{\mathrm{B}} T}+3 N \ln (z)=-\frac{U_{0}}{k_{\mathrm{B}} T}+3 N \ln \left(\frac{1}{1-e^{-h \nu / k_{\mathrm{B}} T}}\right) \\
+  $$\begin{aligned} \ln (\mathcal{Z}) &=-\frac{U_{0}}{k_{\mathrm{B}} T}+3 N \ln (z)=-\frac{U_{0}}{k_{\mathrm{B}} T}+3 N \ln \left(\frac{1}{1-e^{-h \nu / k_{\mathrm{B}} T}}\right) \\
 
 &=-\frac{U_{0}}{k_{\mathrm{B}} T}-3 N \ln \left(1-e^{-h \nu / k_{\mathrm{B}} T}\right) \end{aligned} [Eq.5]$$
 
