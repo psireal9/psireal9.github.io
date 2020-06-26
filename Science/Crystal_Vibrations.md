@@ -22,6 +22,7 @@ In Einstein model, **each atom** oscillates independently.
 <font size="3px"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo <b>harmonic motion</b>, have the same $\nu_{vib}$ and move in phase but generally with <b>differrent amplitudes</b>. </em> </font> 
 
 
+
 <u>Why is it important?</u>
 * The Einstein model employed Planck's quantization assumption -> Important piece of evidence for the need of quantization
 * Exkurs: Dulong-Petit law (End of the post)
