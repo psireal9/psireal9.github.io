@@ -46,7 +46,9 @@ From the post *Molecular Partition Functions*, we know that the single-particle 
 
 The relation between the canonical partition function $Q$ and the unit partition function $q$ is
 <p align="center">
-  $$ Q=q^{N} \quad \text{for}\quad N \quad \text{distinguishable units} \quad <a name="cde">[Eq.2]</a>$$
+  <a name="cde">
+  $$ Q=q^{N} \quad \text{for}\quad N \quad \text{distinguishable units} \quad [Eq.2]$$
+  </a>  
 </p>
 For a monoatomic crystal with $N$ atoms, its vibrational energy is given by
 <p align="center">
