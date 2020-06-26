@@ -53,8 +53,10 @@ For a monoatomic crystal with $N$ atoms, its vibrational energy is given by
 
 where $U_{0}$ is the crystal's ground vibrational energy. For a crystal with large number of atoms $N$, the number of normal modes $3N-6$ can be replaced with $3N$.
 
-Combining [Eq.1], [Eq.2], and [Eq.3], we can see that the canonical partition function for the whole crystal is 
-$$Q=e^{-U_{0} / k_{\mathrm{B}} T} q^{3 N} [Eq.4]$$
+Combining [Eq.1], [Eq.2], and [Eq.3], we can see that the canonical partition function for the whole crystal is
+<p align="center">
+  $$Q=e^{-U_{0} / k_{\mathrm{B}} T} q^{3 N} [Eq.4]$$
+</p>
 
 [Eq.4] makes sense since $U_{0}$ is only a constant so when you take the exponential of [Eq.3], you can bring $e^{-U_{0} / k_{\mathrm{B}} T}$ out of the summation and product. What's left is $\prod_{i=1}^{3 N}\left(\sum_{v_{i}=0}^{\infty} e^{-h \nu v_{i} / k_{\mathrm{B}} T}\right) $ and since all normal modes share the same frequency $\nu$, hence the product can be written in terms of power $\left(\sum_{i=0}^{\infty} e^{-h \nu v_{i} / k_{\mathrm{B}} T}\right)^{3 N}$. [Eq.4] is therefore linked with [Eq.2] because the normal modes are distinguishable from each other. In other words, the vibrational DOF are separable!
 
