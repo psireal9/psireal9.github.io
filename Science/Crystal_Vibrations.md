@@ -46,7 +46,7 @@ From the post *Molecular Partition Functions*, we know that the single-particle 
 
 The relation between the canonical partition function $Q$ and the unit partition function $q$ is
 <p align="center">
-  $$ Q=q^{N} \quad \text{for}\quad N \quad \text{distinguishable units} \quad [Eq.2]$$
+  $$ Q=q^{N} \quad \text{for}\quad N \quad \text{distinguishable units} \quad <a name="cde">[Eq.2]</a>$$
 </p>
 For a monoatomic crystal with $N$ atoms, its vibrational energy is given by
 <p align="center">
@@ -55,7 +55,7 @@ For a monoatomic crystal with $N$ atoms, its vibrational energy is given by
 
 where $U_{0}$ is the crystal's ground vibrational energy. For a crystal with large number of atoms $N$, the number of normal modes $3N-6$ can be replaced with $3N$.
 
-Combining [[Eq.1]](#abcde), [Eq.2], and [Eq.3], we can see that the canonical partition function for the whole crystal is
+Combining [[Eq.1]](#abcde), [[Eq.2]](#cde), and [Eq.3], we can see that the canonical partition function for the whole crystal is
 <p align="center">
   $$Q=e^{-U_{0} / k_{\mathrm{B}} T} q^{3 N} [Eq.4]$$
 </p>
