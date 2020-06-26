@@ -20,7 +20,7 @@ A solid is, indeed, comprised of **independent oscillations**, these oscillation
 In Einstein model, **each atom** oscillates independently.
 
 
-<font size="3px"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo <b>harmonic motion</b>, have the same <img src="https://render.githubusercontent.com/render/math?math=\nu_{vib}" /> and move in phase but generally with <b>differrent amplitudes</b>. </em> </font> 
+<font size="3px"> <em>Normal mode of vibration: a vibration in which all the nuclei undergo <b>harmonic motion</b>, have the same $\nu_{vib}$ and move in phase but generally with <b>differrent amplitudes</b>. </em> </font> 
 
 
 <u>Why is it important?</u>
@@ -39,7 +39,7 @@ In Einstein model, **each atom** oscillates independently.
 
 From the post *Molecular Partition Functions*, we know that the single-particle total vibrational partion function is given by 
 <p align="center">
-  <img src="https://latex2image.joeraut.com/output/img-e11b879112015d32.png">
+  $$ q_{vib}=\prod_{i=1}^{3N_{\text {atom }}-6(5)} q_{\text {vib }}\left(\frac{h\cdot \nu_{i}}{k_{B} \cdot T} \right) \quad [Eq.1]$$
 </p>
 
 The relation between the canonical partition function $Q$ and the unit partition function $q$ is
