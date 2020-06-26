@@ -39,7 +39,8 @@ In Einstein model, **each atom** oscillates independently.
 
 From the post *Molecular Partition Functions*, we know that the single-particle total vibrational partion function is given by 
 <p align="center">
-  $$ q_{vib}=\prod_{i=1}^{3N_{\text {atom }}-6(5)} q_{\text {vib }}\left(\frac{h\cdot \nu_{i}}{k_{B} \cdot T} \right) \quad $$ \label{[Eq.1]}
+  \label{[Eq.1]}
+  $$ q_{vib}=\prod_{i=1}^{3N_{\text {atom }}-6(5)} q_{\text {vib }}\left(\frac{h\cdot \nu_{i}}{k_{B} \cdot T} \right) \quad $$ 
 </p>
 
 The relation between the canonical partition function $Q$ and the unit partition function $q$ is
