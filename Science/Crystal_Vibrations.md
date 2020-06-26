@@ -39,8 +39,10 @@ In Einstein model, **each atom** oscillates independently.
 
 From the post *Molecular Partition Functions*, we know that the single-particle total vibrational partion function is given by 
 <p align="center">
-  \label{[Eq.1]}
-  $$ q_{vib}=\prod_{i=1}^{3N_{\text {atom }}-6(5)} q_{\text {vib }}\left(\frac{h\cdot \nu_{i}}{k_{B} \cdot T} \right) \quad $$ 
+  \begin{equation}
+  q_{vib}=\prod_{i=1}^{3N_{\text {atom }}-6(5)} q_{\text {vib }}\left(\frac{h\cdot \nu_{i}}{k_{B} \cdot T} \right) \quad
+  \end{equation}
+  \label{eq1}\tag{1}
 </p>
 
 The relation between the canonical partition function $Q$ and the unit partition function $q$ is
@@ -54,7 +56,7 @@ For a monoatomic crystal with $N$ atoms, its vibrational energy is given by
 
 where $U_{0}$ is the crystal's ground vibrational energy. For a crystal with large number of atoms $N$, the number of normal modes $3N-6$ can be replaced with $3N$.
 
-Combining \ref{[Eq.1]}, [Eq.2], and [Eq.3], we can see that the canonical partition function for the whole crystal is
+Combining \ref{eq1}, [Eq.2], and [Eq.3], we can see that the canonical partition function for the whole crystal is
 <p align="center">
   $$Q=e^{-U_{0} / k_{\mathrm{B}} T} q^{3 N} [Eq.4]$$
 </p>
