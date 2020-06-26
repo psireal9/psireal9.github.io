@@ -42,7 +42,7 @@ From the post *Molecular Partition Functions*, we know that the single-particle 
   \begin{equation}
   q_{vib}=\prod_{i=1}^{3N_{\text {atom }}-6(5)} q_{\text {vib }}\left(\frac{h\cdot \nu_{i}}{k_{B} \cdot T} \right) \quad
   \end{equation}
-[](#Eq.1)
+[](#eq.1)
 
 The relation between the canonical partition function $Q$ and the unit partition function $q$ is
 <p align="center">
