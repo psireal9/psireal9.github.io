@@ -40,7 +40,7 @@ In Einstein model, **each atom** oscillates independently.
 From the post *Molecular Partition Functions*, we know that the single-particle total vibrational partion function is given by 
 
   \begin{equation}
-  q_{vib}=\prod_{i=1}^{3N_{\text {atom }}-6(5)} q_{\text {vib }}\left(\frac{h\cdot \nu_{i}}{k_{B} \cdot T} \right) \quad <a name="abcde">[Eq.1]</a>
+  q_{vib}=\prod_{i=1}^{3N_{\text {atom }}-6(5)} q_{\text {vib }}\left(\frac{h\cdot \nu_{i}}{k_{B} \cdot T} \right) \quad <a name="abcde">\text{[Eq.1]}</a>
   \end{equation}
 
 
