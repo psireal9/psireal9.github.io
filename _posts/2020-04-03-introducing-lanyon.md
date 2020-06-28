@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Introducing Lanyon
+title: There will be a good title for this
 ---
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
-
+Obviously, it's getting harder and harder to solve scientific problems with only pen and paper. Not that people have nothing to do on a Friday evening but write down the state-space of $k$ harmonic oscillators with $n$ energy level per oscillator.Hence, scientists  
 ### Built on Poole
 
 Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Lanyon here) includes the following:
