@@ -3,7 +3,44 @@ layout: post
 title: There will be a good title for this
 ---
 
-Obviously, it's getting harder and harder to solve scientific problems with only pen and paper. Not that people have nothing to do on a Friday evening but write down the state-space of $k$ harmonic oscillators with $n$ energy level per oscillator.Hence, scientists  
+Obviously, it's getting harder and harder to solve scientific problems with only pen and paper. Not that people have nothing to do on a Friday evening but write down the state-space of $k$ harmonic oscillators with $n$ energy level per oscillator. Hence, I can't stress enough the significance of computer in the advancement of science. I can barely perform Gaussian elimination correctly on a 4x4 matrix so imagine a 15x15 matrix of atom coordinates of the simple methane molecule. You gotta leave that to the copmuter. However, as easy as the path to a quick answer may seem to be, the mine field is full of booby traps. You can run into serious problems with numerical calculation if you are not careful. Take for example if you evalue $f(x)=x^{3}+12 a^{2} x-6 a x^{2}-8 a^{3}=(x-2 a)^{3}$ with the parameter $a = 49999.5$ at $x_{0}=1000000.05$ with 2 different but equivalent transformations, you wil get immensely different results!
+
+```python
+x0 = 1000000.05
+a = 49999.5
+def f1(x):
+    return x**3 + 12*a**2*x - 6*a*x**2 - 8*a**3
+f1(x0)
+```
+
+
+
+
+    7.290025515029768e+17
+
+
+
+
+```python
+def f2(x):
+    return (x-2*a)**3
+
+f2(x0)
+```
+
+
+
+
+    -7.289995018501133e+20
+
+
+
+
+```python
+
+```
+
+
 ### Built on Poole
 
 Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Lanyon here) includes the following:
