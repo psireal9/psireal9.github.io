@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: published
 title: What's Jekyll?
 ---
 
