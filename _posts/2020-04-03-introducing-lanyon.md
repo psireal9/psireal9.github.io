@@ -32,7 +32,7 @@ f2(x0)
 
     -7.289995018501133e+20
 
-Thus, if you are not careful with numerical mathematics, problems including but not limited to cancelllation, Runge phenomenon may make your algorithm shockingly unstable. With this blog, I hope to lay out some of the pitfalls that I am aware of while simultaneously show you the overwhelming joy of simulating physical and theoretical problems. It's addictive!
+Thus, if you are not careful with numerical calcuation, problems including but not limited to cancelllation, Runge phenomenon may make your algorithm shockingly unstable. With this blog, I hope to lay out some of the pitfalls that I am aware of while simultaneously show you the overwhelming joy of simulating physical and theoretical problems. It's addictive!
 
 However, I still categorize this blog as a personal instead of an educational one. I'm neither a mathematician, a computer scientist nor an expert in my field. Hence, even though I try to make sure the content of my blog accurate to my best knowledge, please don't be lazy and just take my word for it. Look through the formulas carefully and read the code line by line. It's also better for your understanding! If you have a hunch that something in my post is incorrect, there may be a good chance it is so. I'm more than delighted to read anything coming from my readers whether it is critic, feedback, correction or suggestion.
 
