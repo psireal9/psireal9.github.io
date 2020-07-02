@@ -107,3 +107,7 @@ This means $G=A$. What does this imply?
   $$\text{Gibbs Energy:} \quad G \stackrel{\text { def }}{=} U -TS + pV = H -TS $$
 </p>
 This means $U=H$ and $pV=0$. The term $pV$ represents the work that would required to "make room" for the system by pushing the atmospheric pressure. Thus, in a way, the Einstein Model suggests the solid exists in a vacuum (where $p=0$) because the solid, of course, does have a volume!
+
+The post's content is written based on 
+1. Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).
+2. Lecture Note of Prof.Dr.Bettina Keller
