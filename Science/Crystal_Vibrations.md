@@ -120,7 +120,7 @@ The value of the Einstein temperature $\Theta_E$ that fits the Einstein crystal 
 \begin{equation}\Theta_{E}=\frac{h c \tilde{\nu}}{k}\end{equation}
 We can plug $\Theta_E$ into the vibrational partition function as follows:
 
-\begin{equation}q_{V}=\frac{1}{1-e^{-\beta h c \widetilde{\nu}}}=\frac{1}{1-e^{-h c \widetilde{\mathcal{N}} / k T}}=\frac{1}{1-e^{-\Theta_{E} / T}}\end{equation}
+\begin{equation}q_{V}=\frac{1}{1-e^{-\beta h c \widetilde{\nu}}}=\frac{1}{1-e^{-h c \widetilde{\nu}} / k T}}=\frac{1}{1-e^{-\Theta_{E} / T}}\end{equation}
 
 The Taylor's series expansion for $e^{-x}$ is $e^{-x}=1-\frac{x}{1 !}+\frac{x^{2}}{2 !}-\frac{x^{3}}{3 !}(-1)+\ldots$
 
@@ -153,7 +153,12 @@ plt.ylabel(r'$c_V $(J/mol.K)')
 
 ```
 
+* Find temperature at which $\frac{C_V}{3k_BN}=0.95$
+This is equivalent to finding the root of 
+
 ![image alt ><](../images/output_5_1.png#center)
+
+Based on Einstein Crystal Model, the heat capacity is $C_{\mathrm{V}}=\left(\frac{\partial U}{\partial T}\right)_{V, N}=3 N k_{\mathrm{B}}\left(\frac{h v}{k_{\mathrm{B}} T}\right)^{2} \frac{e^{h v / k_{\mathrm{B}} T}}{\left(e^{h v / k_{\mathrm{B}} T}-1\right)^{2}}=3Nk_B\left(\frac{\Theta_E}{T}\right)^2\frac{e^{\Theta_E/T}}{\left(e^{\Theta_E/T}-1\right)^2}$
 
 The post's content was written based on 
 1. *Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).*
