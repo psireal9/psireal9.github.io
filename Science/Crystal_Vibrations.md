@@ -115,6 +115,18 @@ The value of the Einstein temperature $\Theta_E$ that fits the Einstein crystal 
 2. Draw a graph of the heat capacity of aluminum from 0 to 300 K, according to the Einstein model.
 3. At what temperature does the prediction of the Einstein model for the heat capacity of aluminum come within 5.00% of the law of Dulong and Petit? At what temperature does it come within 1.00% of the law of Dulong and Petit?
 
+<u>Solution 1:</u>
+* Vibrational/Einstein temperature  $\Theta_E$ is used as high temperature approximation to $q_{v}$
+\begin{equation}\Theta_{E}=\frac{h c \tilde{\nu}}{k}\end{equation}
+We can plug $\Theta_E$ into the vibrational partition function as follows:
+
+\begin{equation}q_{V}=\frac{1}{1-e^{-\beta h c \widetilde{\nu}}}=\frac{1}{1-e^{-h c \widetilde{\mathcal{N}} / k T}}=\frac{1}{1-e^{-\Theta_{E} / T}}\end{equation}
+
+The Taylor's series expansion for $e^{-x}$ is $e^{-x}=1-\frac{x}{1 !}+\frac{x^{2}}{2 !}-\frac{x^{3}}{3 !}(-1)+\ldots$
+
+So when $T>>\Theta_{E}$, terms of higher oders ($\leq 2$) in $e^{-\Theta_{E} / T}$ are terribly small enough to be truncated. Hence, we end up with a high-temperature limit for $q_{V}$
+\begin{equation}q_{V}=\frac{1}{1-e^{-\Theta_{V} / T}}=\frac{1}{1-\left(1-\frac{\Theta_{V}}{T}\right)}=\frac{T}{\Theta_{V}} \end{equation}
+
 
 The post's content was written based on 
 1. *Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).*
