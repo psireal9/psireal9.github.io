@@ -139,6 +139,7 @@ print(f"nu = {nu:.8e} s^-1")
     nu = 5.00079232e+12 s^-1
     
 * Plot $C_{V}(T)$
+
 ```python
 T = np.linspace(1,300,1000)
 cv = 3*Nav*k*(theta/T)**2*np.exp(theta/T)/(np.exp(theta/T)-1)**2
@@ -155,6 +156,7 @@ plt.ylabel(r'$c_V $(J/mol.K)')
 
 
     Text(0,0.5,'$c_V $(J/mol.K)')
+    
 ![img](/images/output_5_1.png)
 
 The post's content was written based on 
