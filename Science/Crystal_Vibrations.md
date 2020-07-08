@@ -127,7 +127,7 @@ The Taylor's series expansion for $e^{-x}$ is $e^{-x}=1-\frac{x}{1 !}+\frac{x^{2
 So when $T>>\Theta_{E}$, terms of higher oders ($\leq 2$) in $e^{-\Theta_{E} / T}$ are terribly small enough to be truncated. Hence, we end up with a high-temperature limit for $q_{V}$
 \begin{equation}q_{V}=\frac{1}{1-e^{-\Theta_{V} / T}}=\frac{1}{1-\left(1-\frac{\Theta_{V}}{T}\right)}=\frac{T}{\Theta_{V}} \end{equation}
 
-* Thus, the virbational frequency at any $\Theta_E$ is $\nu = \frac{k_B\Theta_E}{h}=5.00\times10^{12}\mathrm{s}^{-1}$
+* Thus, the virbational frequency at any $\Theta_E$ is $\nu = \frac{k_B\Theta_E}{h}$
 
 ```python
 theta_E = 240 # einstein temperature in K
@@ -137,6 +137,24 @@ print(f"nu = {nu:.8e} s^-1")
 ```
 
     nu = 5.00079232e+12 s^-1
+* Plot $C_{V}(T)$
+```python
+T = np.linspace(1,300,1000)
+cv = 3*Nav*k*(theta/T)**2*np.exp(theta/T)/(np.exp(theta/T)-1)**2
+
+plt.figure(figsize=(10,6))
+plt.plot(T,cv,label='Einstein model')
+plt.hlines(3*Nav*k,xmin=1,xmax=300,label='Dulong-Petit')
+plt.legend()
+plt.xlabel(r'$T(K)$')
+plt.ylabel(r'$c_V $(J/mol.K)')
+```
+
+
+
+
+    Text(0,0.5,'$c_V $(J/mol.K)')
+![img](images/output_5_1.png)
 
 The post's content was written based on 
 1. *Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).*
