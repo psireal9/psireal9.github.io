@@ -124,7 +124,7 @@ We can plug $\Theta_E$ into the vibrational partition function as follows:
 
 The Taylor's series expansion for $e^{-x}$ is $e^{-x}=1-\frac{x}{1 !}+\frac{x^{2}}{2 !}-\frac{x^{3}}{3 !}(-1)+\ldots$
 
-So when $T>>\Theta_{E}$, terms of higher oders ($\leq 2$) in $e^{-\Theta_{E} / T}$ are terribly small enough to be truncated. Hence, we end up with a high-temperature limit for $q_{V}$
+So when $T \gg \Theta_{E}$, terms of higher oders ($\leq 2$) in $e^{-\Theta_{E} / T}$ are terribly small enough to be truncated. Hence, we end up with a high-temperature limit for $q_{V}$
 \begin{equation}q_{V}=\frac{1}{1-e^{-\Theta_{V} / T}}=\frac{1}{1-\left(1-\frac{\Theta_{V}}{T}\right)}=\frac{T}{\Theta_{V}} \end{equation}
 
 * Thus, the virbational frequency at any $\Theta_E$ is $\nu = \frac{k_B\Theta_E}{h}$
