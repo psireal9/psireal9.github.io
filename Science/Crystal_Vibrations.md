@@ -120,7 +120,7 @@ The value of the Einstein temperature $\Theta_E$ that fits the Einstein crystal 
 \begin{equation}\Theta_{E}=\frac{h c \tilde{\nu}}{k}\end{equation}
 We can plug $\Theta_E$ into the vibrational partition function as follows:
 
-\begin{equation}q_{V}=\frac{1}{1-e^{-\beta h c \widetilde{\nu}}}=\frac{1}{1-e^{-h c \widetilde{\nu}}} / k T}}=\frac{1}{1-e^{-\Theta_{E} / T}}\end{equation}
+\begin{equation}q_{V}=\frac{1}{1-e^{-\beta h c \widetilde{\nu}}}=\frac{1}{1-e^{-\Theta_{E} / T}}\end{equation}
 
 The Taylor's series expansion for $e^{-x}$ is $e^{-x}=1-\frac{x}{1 !}+\frac{x^{2}}{2 !}-\frac{x^{3}}{3 !}(-1)+\ldots$
 
