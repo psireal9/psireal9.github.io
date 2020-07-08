@@ -157,7 +157,8 @@ plt.ylabel(r'$c_V $(J/mol.K)')
 
 * Find temperature at which $\frac{C_V}{3k_BN}=0.95$
 
-Based on Einstein Crystal Model, the heat capacity is
+Based on Einstein Crystal Model, the heat capacity is:
+
 \begin{equation}C_{\mathrm{V}}=\left(\frac{\partial U}{\partial T}\right)_{V, N}=3 N k_{\mathrm{B}}\left(\frac{h v}{k_{\mathrm{B}} T}\right)^{2} \frac{e^{h v / k_{\mathrm{B}} T}}{\left(e^{h v / k_{\mathrm{B}} T}-1\right)^{2}}\end{equation}
 
 The task is equivalent to finding the root of 
@@ -175,8 +176,10 @@ print(f'The temperature at which the Einstein model reaches 95 percent of the Du
 We use the absolute difference because the Dulong-Petit-Limit is the upper limit of heat capacity i.e $\frac{C_V}{3k_BN} \leqslant 1$ hence the difference will always be negative then reach 0 and become positive as $T$ increases. One can say that if we take the absolute of the difference, we run the risk of obtaining a temperature for which $C_{V}$ is slightly above $0.95 \cdot 3k_{B}N$ instead of slightly below $0.95 \cdot 3k_{B}N$ <sup>(\*)</sup>, which is absolutely true. However,the difference the upper $T$ (the one above $0.95 \cdot 3k_{B}N$) and lower $T$  (the one below $0.95 \cdot 3k_{B}N$) is extremely small. See it for yourself by testing `print(abs(function_array).min())`
 
 <font size="3px"> <em> * You can never get absolute 0 of difference because we are evaluating the function numerically and there is no perfect cancellation in floating-point arithmetic! Also array $T$ is not a continous variable. You may have not included the exact point which is the root of $f(T)$
- </em> </font> 
-The post's content was written based on 
+ </em> </font>
+ 
+The post's content was written based on: 
 1. *Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).*
-2. *Lecture Note of Prof.Dr.Bettina Keller*
-3. *Wikipedia [page](https://en.wikipedia.org/wiki/Einstein_solid)*
+2. *Engel, T., &amp; Reid, P. (2018). Chapter 32 Statistical Thermodynamics. In Physical chemistry (3rd ed., pp. 834-835). Upper Saddle River: Pearson.*
+3. *Lecture Note of Prof.Dr.Bettina Keller*
+4. *Wikipedia [page](https://en.wikipedia.org/wiki/Einstein_solid)*
