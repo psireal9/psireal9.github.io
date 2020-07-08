@@ -150,13 +150,12 @@ plt.hlines(3*Nav*k,xmin=1,xmax=300,label='Dulong-Petit')
 plt.legend()
 plt.xlabel(r'$T(K)$')
 plt.ylabel(r'$c_V $(J/mol.K)')
+
 ```
 
-
-
-
     Text(0,0.5,'$c_V $(J/mol.K)')
-    
+
+
 ![img](/images/output_5_1.png)
 
 The post's content was written based on 
