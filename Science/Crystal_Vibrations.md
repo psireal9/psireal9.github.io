@@ -178,7 +178,8 @@ We use the absolute difference because the Dulong-Petit-Limit is the upper limit
 
 <font size="3px"> <em> * You can never get absolute 0 of difference because we are evaluating the function numerically and there is no perfect cancellation in floating-point arithmetic! Also array $T$ is not a continous variable. You may have not included the exact point which is the root of $f(T)$
  </em> </font>
- 
+
+<br />
 The post's content was written based on: 
 1. *Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).*
 2. *Engel, T., &amp; Reid, P. (2018). Chapter 32 Statistical Thermodynamics. In Physical chemistry (3rd ed., pp. 834-835). Upper Saddle River: Pearson.*
