@@ -137,6 +137,7 @@ print(f"nu = {nu:.8e} s^-1")
 ```
 
     nu = 5.00079232e+12 s^-1
+    
 * Plot $C_{V}(T)$
 ```python
 T = np.linspace(1,300,1000)
