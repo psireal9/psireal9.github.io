@@ -3,7 +3,7 @@ layout: post
 title: Crystal Vibrations
 ---
 
-<u> Motivation </u>
+<u> Motivation: </u>
 * Study 2 model systems that represent the vibrations of a crystal
     1. Einstein Crystal Model
     2. Debye Crystal Model
@@ -107,6 +107,14 @@ This means $G=A$. What does this imply?
   $$\text{Gibbs Energy:} \quad G \stackrel{\text { def }}{=} U -TS + pV = H -TS $$
 </p>
 This means $U=H$ and $pV=0$. The term $pV$ represents the work that would required to "make room" for the system by pushing the atmospheric pressure. Thus, in a way, the Einstein Model suggests the solid exists in a vacuum (where $p=0$) because the solid, of course, does have a volume!
+
+<u>Exercise 1:</u>
+The value of the Einstein temperature $\Theta_E$ that fits the Einstein crystal model heat-capacity formula to aluminum data is 240 K.
+
+1. What is the vibrational frequency corresponding to this value of the parameter?
+2. Draw a graph of the heat capacity of aluminum from 0 to 300 K, according to the Einstein model.
+3. At what temperature does the prediction of the Einstein model for the heat capacity of aluminum come within 5.00% of the law of Dulong and Petit? At what temperature does it come within 1.00% of the law of Dulong and Petit?
+
 
 The post's content was written based on 
 1. *Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).*
