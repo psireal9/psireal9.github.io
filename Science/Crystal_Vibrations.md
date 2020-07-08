@@ -159,7 +159,7 @@ plt.ylabel(r'$c_V $(J/mol.K)')
 
 Based on Einstein Crystal Model, the heat capacity is:
 
-\begin{equation}C_{\mathrm{V}}=\left(\frac{\partial U}{\partial T}\right)_{V, N}=3 N k_{\mathrm{B}}\left(\frac{h v}{k_{\mathrm{B}} T}\right)^{2} \frac{e^{h v / k_{\mathrm{B}} T}}{\left(e^{h v / k_{\mathrm{B}} T}-1\right)^{2}}\end{equation}
+\begin{equation}C_{\mathrm{V}}=\left(\frac{\partial U}{\partial T}\right)_{V, N}=3 N k_{\mathrm{B}}\left(\frac{h \nu}{k_{\mathrm{B}} T}\right)^{2} \frac{e^{h \nu / k_{\mathrm{B}} T}}{\left(e^{h \nu / k_{\mathrm{B}} T}-1\right)^{2}}\end{equation}
 
 The task is equivalent to finding the root of 
 \begin{equation}f(T)=\left(\frac{\Theta_{E}}{T}\right)^{2} \frac{e^{\Theta_{E} / T}}{\left(e^{\Theta_{E} / T}-1\right)^{2}}-0.95=0\end{equation}
