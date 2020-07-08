@@ -156,7 +156,7 @@ plt.ylabel(r'$c_V $(J/mol.K)')
 
 
 
-![img](/images/ lanyon/images/output_5_1.png )
+![img](lanyon/images/output_5_1.png )
 
 The post's content was written based on 
 1. *Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).*
