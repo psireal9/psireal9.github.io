@@ -158,6 +158,7 @@ plt.ylabel(r'$c_V $(J/mol.K)')
 * Find temperature at which $\frac{C_V}{3k_BN}=0.95$
 
 Based on Einstein Crystal Model, the heat capacity is:
+
 $$C_{\mathrm{V}}=\left(\frac{\partial U}{\partial T}\right)_{V, N}=3 N k_{\mathrm{B}}\left(\frac{h v}{k_{\mathrm{B}} T}\right)^{2} \frac{e^{h v / k_{\mathrm{B}} T}}{\left(e^{h v / k_{\mathrm{B}} T}-1\right)^{2}}$$
 
 The task is equivalent to finding the root of 
