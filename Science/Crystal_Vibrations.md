@@ -116,7 +116,7 @@ The value of the Einstein temperature $\Theta_E$ that fits the Einstein crystal 
 3. At what temperature does the prediction of the Einstein model for the heat capacity of aluminum come within 5.00% of the law of Dulong and Petit? At what temperature does it come within 1.00% of the law of Dulong and Petit?
 
 <u>Solution 1:</u>
-* Vibrational/Einstein temperature  $\Theta_E$ is used as high temperature approximation to $q_{v}$
+* Vibrational/Einstein temperature  $\Theta_E$ is used as high temperature approximation to $q_{V}$
 \begin{equation}\Theta_{E}=\frac{h c \tilde{\nu}}{k}\end{equation}
 We can plug $\Theta_E$ into the vibrational partition function as follows:
 
@@ -127,6 +127,16 @@ The Taylor's series expansion for $e^{-x}$ is $e^{-x}=1-\frac{x}{1 !}+\frac{x^{2
 So when $T>>\Theta_{E}$, terms of higher oders ($\leq 2$) in $e^{-\Theta_{E} / T}$ are terribly small enough to be truncated. Hence, we end up with a high-temperature limit for $q_{V}$
 \begin{equation}q_{V}=\frac{1}{1-e^{-\Theta_{V} / T}}=\frac{1}{1-\left(1-\frac{\Theta_{V}}{T}\right)}=\frac{T}{\Theta_{V}} \end{equation}
 
+* Thus, the virbational frequency at any $\Theta_E$ is $\nu = \frac{k_B\Theta_E}{h}=5.00\times10^{12}\mathrm{s}^{-1}$
+
+```python
+theta_E = 240 # einstein temperature in K
+nu = k*theta_E/h
+print(f"nu = {nu:.8e} s^-1")
+
+```
+
+    nu = 5.00079232e+12 s^-1
 
 The post's content was written based on 
 1. *Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).*
