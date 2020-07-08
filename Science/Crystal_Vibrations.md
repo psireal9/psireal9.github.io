@@ -130,8 +130,8 @@ So when $T>>\Theta_{E}$, terms of higher oders ($\leq 2$) in $e^{-\Theta_{E} / T
 * Thus, the virbational frequency at any $\Theta_E$ is $\nu = \frac{k_B\Theta_E}{h}$
 
 ```python
-theta_E = 240 # einstein temperature in K
-nu = k*theta_E/h
+theta = 240 # einstein temperature in K
+nu = k*theta/h
 print(f"nu = {nu:.8e} s^-1")
 
 ```
@@ -153,12 +153,26 @@ plt.ylabel(r'$c_V $(J/mol.K)')
 
 ```
 
-* Find temperature at which $\frac{C_V}{3k_BN}=0.95$
-This is equivalent to finding the root of 
-
 ![image alt ><](../images/output_5_1.png#center)
 
-Based on Einstein Crystal Model, the heat capacity is $C_V = 3Nk_B\left(\frac{h\nu}{k_BT}\right)^2\frac{e^{h\nu/k_BT}}{\left(e^{h\nu/k_BT-1}\right)^2} =3Nk_B\left(\frac{\Theta_E}{T}\right)^2\frac{e^{\Theta_E/T}}{\left(e^{\Theta_E/T}-1\right)^2}$
+* Find temperature at which $\frac{C_V}{3k_BN}=0.95$
+
+Based on Einstein Crystal Model, the heat capacity is
+\begin{equation}C_{\mathrm{V}}=\left(\frac{\partial U}{\partial T}\right)_{V, N}=3 N k_{\mathrm{B}}\left(\frac{h v}{k_{\mathrm{B}} T}\right)^{2} \frac{e^{h v / k_{\mathrm{B}} T}}{\left(e^{h v / k_{\mathrm{B}} T}-1\right)^{2}}\end{equation}
+
+The task is equivalent to finding the root of 
+\begin{equation}f(T)=\left(\frac{\Theta_{E}}{T}\right)^{2} \frac{e^{\Theta_{E} / T}}{\left(e^{\Theta_{E} / T}-1\right)^{2}}-0.95=0\end{equation}
+
+The idea is to create an array of $f(T)$ for various T and determine the minimum element of the array. 
+```python
+T = np.linspace(1,1000,100000)
+function_array = (theta/T)**2*np.exp(theta/T)/(np.exp(theta/T)-1)**2-0.95
+print(f'The temperature at which the Einstein model reaches 95 percent of the Dulong-Petit limit is:',T[abs(function_array).argmin()],'K')
+```
+
+    The temperature at which the Einstein model reaches 95 percent of the Dulong-Petit limit is: 305.12861128611286 K
+
+We use the absolute difference because the Dulong-Petit-Limit is the upper limit of heat capacity i.e $\frac{C_V}{3k_BN} \leqslant 1$ hence the difference will always be negative then reach 0 and become positive as T increases
 
 The post's content was written based on 
 1. *Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).*
