@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Others
+order: 3
 ---
 
 * **Recreational math:** 
