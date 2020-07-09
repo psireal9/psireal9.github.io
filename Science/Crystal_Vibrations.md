@@ -184,4 +184,5 @@ The post's content was written based on:
 1. *Mortimer, R. G. (n.d.). Chapter 28 The structure of Solids,Liquids, and Polymers. In Physical Chemistry (3rd ed., pp. 1162-1171).*
 2. *Engel, T., &amp; Reid, P. (2018). Chapter 32 Statistical Thermodynamics. In Physical chemistry (3rd ed., pp. 834-835). Upper Saddle River: Pearson.*
 3. *Lecture Note of Prof.Dr.Bettina Keller*
-4. *Wikipedia [page](https://en.wikipedia.org/wiki/Einstein_solid)*
+4. *Solution to Exercises from Simon Ghysbrecht*
+5. *Wikipedia [page](https://en.wikipedia.org/wiki/Einstein_solid)*
