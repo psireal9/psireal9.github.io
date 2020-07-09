@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Math
+order: 2
 ---
 
 * **Linear Differential Equation:** 
