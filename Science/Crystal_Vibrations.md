@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Crystal Vibrations
+date: 2020-07-08
 ---
 
 <u> Motivation: </u>
