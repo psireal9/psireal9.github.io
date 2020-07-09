@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-order: 4
+order: 1
 ---
 
 <p class="message">
