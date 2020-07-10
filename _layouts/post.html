@@ -26,7 +26,3 @@ layout: default
 </div>
 {% endif %}
 
-{% assign sorted = paginator.posts | sort: "stickiness" %}
-{% for post in sorted %}
- {{post.title}}]({{post.url}}) {{post.date|date_to_string}}
-{% endfor %}
