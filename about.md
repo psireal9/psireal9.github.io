@@ -20,4 +20,6 @@ All that being said, I will structure my webpage into 3 parts as following:
 
 Have questions or suggestions? Feel free to [send me an email](mailto:nguyed99@zedat.fu-berlin.de) or [ask me on Twitter](https://twitter.com/psireal99).
 
+Ihr könnt auch auf deutsch mit mir reden, falls Ihr das einfacher findet :D
+
 Thanks for reading!
