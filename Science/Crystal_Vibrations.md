@@ -124,7 +124,7 @@ One can prove that
 
 whereby, $C_{\mathrm{V}}$ is the heat capacity derived using Einstein model.
 
-You might ask why should $\lim_{T \rightarrow \0} C_{\mathrm{V}}=0$. Mathematically, one can show that using the thermodynamic definition of entropy and the third law of the thermodynamics.
+You might ask why should $\lim_{T \rightarrow 0} C_{\mathrm{V}}=0$. Mathematically, one can show that using the thermodynamic definition of entropy and the third law of the thermodynamics.
 
 <p align="center">  
   $$S\left(T_{0}\right)=\int_{0}^{T_{0}} d S=\int_{0}^{T_{0}} \frac{d Q}{T}=\int_{0}^{T_{0}} \frac{C_{x} d T}{T}$$
@@ -145,7 +145,7 @@ Each DOF contributes towards the total number of accessible states in term of pa
 
 We have $q=q_{T, 3 D}\cdot q_{R} \cdot q_{vib} =0 $ for $T=0$. As $T \rightarrow 0$, the system has no accessible DOF and therefore a zero heat capacity. This makes sense because the energy spacing of quantum states has to be less than $kT$ for states of higher energy to be populated and participate in determining the specific heat. However, the moment you add the smallest amount of heat the temperature increases, some states become accessible and the specific heat becomes non-zero. The zero specific heat is more of an idealised limit than a real phenomenon.
 
-Another way to say the same thing is that if $C=0$, when you raise the temperature the energy remains constant, because $kT$ (which is 0 for $T=0$)is still less than $\varepsilon$, where $\varepsilon$ is the energy difference between the first excited and ground state. Therefore, no transition can occur and the system stays in the ground state. 
+Another way to say the same thing is that if $C_{x}=0$, when you raise the temperature the energy remains constant, because $kT$ (which is 0 for $T=0$)is still less than $\varepsilon$, where $\varepsilon$ is the energy difference between the first excited and ground state. Therefore, no transition can occur and the system stays in the ground state. 
 
 Actually for Einstein model $C_{V}$ is not defined for $T=0$.
 
