@@ -5,9 +5,7 @@ date: 2020-07-08
 ---
 
 <u> Motivation: </u>
-* Study 2 model systems that represent the vibrations of a crystal
-    1. Einstein Crystal Model
-    2. Debye Crystal Model
+* Study a model system that represent the vibrations of a crystal: Einstein crystal model
 
 ### Einstein Crystal Model
 Einstein solid is a model of solid based on 2 assumptions:
@@ -109,6 +107,49 @@ This means $G=A$. What does this imply?
 </p>
 This means $U=H$ and $pV=0$. The term $pV$ represents the work that would required to "make room" for the system by pushing the atmospheric pressure. Thus, in a way, the Einstein Model suggests the solid exists in a vacuum (where $p=0$) because the solid, of course, does have a volume!
 
+### Exkurs: Law of Dulong-Petit (1819)
+* Empirical thermodynamic law that states the molar specific heat capacity of most solid is $3R$. One can prove that
+\begin{equation}\lim _{T \rightarrow \infty} C_{\mathrm{V}}=3 N k_{\mathrm{B}}=3 n R\end{equation}
+whereby, $C_{\mathrm{V}$ is the heat capacity derived using Einstein model. 
+
+```python
+
+elements = pandas.read_json('elements.json')
+elements.full_name = elements.full_name.str.capitalize()
+hovertext = elements.T.apply(
+    lambda s: f'<sup>{s.number}</sup>{s.abbr} '
+              f'[{s.full_name}{", " * bool(s.remark)}{s.remark}]'
+)
+
+fig = go.Figure(
+    data=[
+        go.Scatter(
+            x=elements.number,
+            y=elements.c / 8.314,
+            mode='markers+text',
+            textposition='top center',
+            hovertext=hovertext,
+            hoverinfo='text'
+        ),
+    ],
+    layout=go.Layout(
+        title='Heat capacity of chemical elements',
+        autosize=True,
+        yaxis=go.layout.YAxis(
+            title='$C/k_B$',
+            tick0=1,
+            dtick=2,
+        ),
+        xaxis=go.layout.XAxis(
+            title='Atomic number'
+        ),
+        hovermode='closest',
+    ),
+)
+
+py.iplot(fig, show_link=False)
+```
+
 <u>Exercise 1:</u>
 The value of the Einstein temperature $\Theta_E$ that fits the Einstein crystal model heat-capacity formula to aluminum data is 240 K.
 
@@ -117,7 +158,7 @@ The value of the Einstein temperature $\Theta_E$ that fits the Einstein crystal 
 3. At what temperature does the prediction of the Einstein model for the heat capacity of aluminum come within 5.00% of the law of Dulong and Petit? At what temperature does it come within 1.00% of the law of Dulong and Petit?
 
 <u>Solution 1:</u>
-* Vibrational/Einstein temperature  $\Theta_E$ is used as high temperature approximation to $q_{V}$
+* Vibrational/Einstein temperature  $\Theta_E$ is used as high temperature approximation to $q_{V}$. 
 \begin{equation}\Theta_{E}=\frac{h c \tilde{\nu}}{k}\end{equation}
 We can plug $\Theta_E$ into the vibrational partition function as follows:
 
