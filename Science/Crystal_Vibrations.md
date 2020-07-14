@@ -125,7 +125,10 @@ One can prove that
 whereby, $C_{\mathrm{V}$ is the heat capacity derived using Einstein model.
 
 You might ask why should $\lim _{T \rightarrow \0} C_{\mathrm{V}}=0$. Mathematically, one can show that using the thermodynamic definition of entropy and the third law of the thermodynamics. 
-\begin{equation}S\left(T_{0}\right)=\int_{0}^{T_{0}} d S=\int_{0}^{T_{0}} \frac{d Q}{T}=\int_{0}^{T_{0}} \frac{C_{x} d T}{T}\end{equation}
+<p align="center">  
+  $$S\left(T_{0}\right)=\int_{0}^{T_{0}} d S=\int_{0}^{T_{0}} \frac{d Q}{T}=\int_{0}^{T_{0}} \frac{C_{x} d T}{T}$$
+</p> 
+
 whereby $C_{x}$ is the heat capacity where the paramter $x$ is taken constant.
 
 This integral will diverge for all $C_{x}(T=0)\neq 0$. But what is the physical meaning of zero heat capacity. Does it mean no matter how much heat one puts in the system, the temperature will continue to remain constant? 
