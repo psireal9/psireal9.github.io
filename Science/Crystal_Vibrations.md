@@ -108,47 +108,38 @@ This means $G=A$. What does this imply?
 This means $U=H$ and $pV=0$. The term $pV$ represents the work that would required to "make room" for the system by pushing the atmospheric pressure. Thus, in a way, the Einstein Model suggests the solid exists in a vacuum (where $p=0$) because the solid, of course, does have a volume!
 
 ### Exkurs: Law of Dulong-Petit (1819)
-* Empirical thermodynamic law that states the molar specific heat capacity of most solid is $3R$. One can prove that
+Empirical thermodynamic law that states the molar specific heat capacity of most solid is $3R$. This finding is consistent with the equipartition theorem which states that for a non-linear polyatomic molecule, the internal energy is $3\cdot kT$ for its three translational DOF and three rotational DOF.
+> Molecules do not vibrate signficantly at room temperature and as first approximation, the contribution of molecular vibrations to the internal energy is negligible except for large molecules such as polymers and biological macromolecules. 
+
+Therefore, the molar internal energy would be  $3\cdot RT$. Hence
+\begin{equation}C_{V}=\left(\frac{\partial U}{\partial T}\right)_{V}=3R\end{equation}
+
+This [first graph](https://solidstate.quantumtinkerer.tudelft.nl/1_einstein_model/) shows heat capacities of different chemical elements at $25^{\circ} \mathrm{C}$.
+
+One can prove that
 \begin{equation}\lim _{T \rightarrow \infty} C_{\mathrm{V}}=3 N k_{\mathrm{B}}=3 n R\end{equation}
-whereby, $C_{\mathrm{V}$ is the heat capacity derived using Einstein model. 
+whereby, $C_{\mathrm{V}$ is the heat capacity derived using Einstein model.
 
-```python
+You might ask why should $\lim _{T \rightarrow \0} C_{\mathrm{V}}=0$. Mathematically, one can show that using the thermodynamic definition of entropy and the third law of the thermodynamics. 
+\begin{equation}S\left(T_{0}\right)=\int_{0}^{T_{0}} d S=\int_{0}^{T_{0}} \frac{d Q}{T}=\int_{0}^{T_{0}} \frac{C_{x} d T}{T}\end{equation}
+whereby $C_{x}$ is the heat capacity where the paramter $x$ is taken constant.
 
-elements = pandas.read_json('elements.json')
-elements.full_name = elements.full_name.str.capitalize()
-hovertext = elements.T.apply(
-    lambda s: f'<sup>{s.number}</sup>{s.abbr} '
-              f'[{s.full_name}{", " * bool(s.remark)}{s.remark}]'
-)
+This integral will diverge for all $C_{x}(T=0)\neq 0$. But what is the physical meaning of zero heat capacity. Does it mean no matter how much heat one puts in the system, the temperature will continue to remain constant? 
 
-fig = go.Figure(
-    data=[
-        go.Scatter(
-            x=elements.number,
-            y=elements.c / 8.314,
-            mode='markers+text',
-            textposition='top center',
-            hovertext=hovertext,
-            hoverinfo='text'
-        ),
-    ],
-    layout=go.Layout(
-        title='Heat capacity of chemical elements',
-        autosize=True,
-        yaxis=go.layout.YAxis(
-            title='$C/k_B$',
-            tick0=1,
-            dtick=2,
-        ),
-        xaxis=go.layout.XAxis(
-            title='Atomic number'
-        ),
-        hovermode='closest',
-    ),
-)
+If we look at heat capacity in term of statiscal thermodynamics, we can explain this.
 
-py.iplot(fig, show_link=False)
-```
+A system has a non-zero capacity because it has internal degrees of freedom (translation, vibration, rotation) into which it can channel the absorbed energy and therefore raises the system's internal energy. 
+
+Each DOF contributes towards the total number of accessible states in term of partition functions. 
+* $q_{T, 3 D}=\frac{V}{\Lambda^{3}}=(2 \pi m k T)^{3 / 2} \frac{V}{h^{3}}$
+* $q_{R}=\frac{1}{\sigma \beta h c B}=\frac{k T}{\sigma h c B}$
+* $q_{vib}=\frac{1}{1-e^{-\beta h c \widetilde{\nu}}}=\frac{1}{1-e^{-h c \widetilde{\nu} / k T}}$ 
+
+We have $q=q_{T, 3 D}\cdot q_{R} \cdot q_{vib} =0 $ for $T=0$. As $T \rightarrow 0$, the system has no accessible DOF and therefore a zero heat capacity. This makes sense because the energy spacing of quantum states has to be less than $kT$ for states of higher energy to be populated and participate in determining the specific heat. However, the moment you add the smallest amount of heat the temperature increases, some states become accessible and the specific heat becomes non-zero. The zero specific heat is more of an idealised limit than a real phenomenon.
+
+Another way to say the same thing is that if $C=0$, when you raise the temperature the energy remains constant, because $kT$ (which is 0 for $T=0$)is still less than $\varepsilon$, where $\varepsilon$ is the energy difference between the first excited and ground state. Therefore, no transition can occur and the system stays in the ground state. 
+
+Actually for Einstein model $C_{V}$ is not defined for $T=0$.
 
 <u>Exercise 1:</u>
 The value of the Einstein temperature $\Theta_E$ that fits the Einstein crystal model heat-capacity formula to aluminum data is 240 K.
