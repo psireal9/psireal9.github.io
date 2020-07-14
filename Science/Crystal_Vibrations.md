@@ -121,6 +121,7 @@ One can prove that
 <p align="center">
   $$\lim _{T \rightarrow \infty} C_{\mathrm{V}}=3 N k_{\mathrm{B}}=3 n R$$
 </p>
+
 whereby, $C_{\mathrm{V}$ is the heat capacity derived using Einstein model.
 
 You might ask why should $\lim _{T \rightarrow \0} C_{\mathrm{V}}=0$. Mathematically, one can show that using the thermodynamic definition of entropy and the third law of the thermodynamics. 
