@@ -117,6 +117,7 @@ Therefore, the molar internal energy would be  $3\cdot RT$. Hence
 This [first graph](https://solidstate.quantumtinkerer.tudelft.nl/1_einstein_model/) shows heat capacities of different chemical elements at $25^{\circ} \mathrm{C}$.
 
 One can prove that
+
 \begin{equation}\lim _{T \rightarrow \infty} C_{\mathrm{V}}=3 N k_{\mathrm{B}}=3 n R\end{equation}
 whereby, $C_{\mathrm{V}$ is the heat capacity derived using Einstein model.
 
