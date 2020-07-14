@@ -124,7 +124,8 @@ One can prove that
 
 whereby, $C_{\mathrm{V}$ is the heat capacity derived using Einstein model.
 
-You might ask why should $\lim _{T \rightarrow \0} C_{\mathrm{V}}=0$. Mathematically, one can show that using the thermodynamic definition of entropy and the third law of the thermodynamics. 
+You might ask why should $\lim _{T \rightarrow \0} C_{\mathrm{V}}=0$. Mathematically, one can show that using the thermodynamic definition of entropy and the third law of the thermodynamics.
+
 <p align="center">  
   $$S\left(T_{0}\right)=\int_{0}^{T_{0}} d S=\int_{0}^{T_{0}} \frac{d Q}{T}=\int_{0}^{T_{0}} \frac{C_{x} d T}{T}$$
 </p> 
