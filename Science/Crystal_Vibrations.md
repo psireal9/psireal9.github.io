@@ -139,8 +139,8 @@ If we look at heat capacity in term of statiscal thermodynamics, we can explain 
 A system has a non-zero capacity because it has internal degrees of freedom (translation, vibration, rotation) into which it can channel the absorbed energy and therefore raises the system's internal energy. 
 
 Each DOF contributes towards the total number of accessible states in term of partition functions. 
-* $q_{T, 3 D}=\frac{V}{\Lambda^{3}}=(2 \pi m k T)^{3 / 2} \frac{V}{h^{3}}$
-* $q_{R}=\frac{1}{\sigma \beta h c B}=\frac{k T}{\sigma h c B}$
+* $q_{trans}=\frac{V}{\Lambda^{3}}=(2 \pi m k T)^{3 / 2} \frac{V}{h^{3}}$
+* $q_{rot}=\frac{1}{\sigma \beta h c B}=\frac{k T}{\sigma h c B}$
 * $q_{vib}=\frac{1}{1-e^{-\beta h c \widetilde{\nu}}}=\frac{1}{1-e^{-h c \widetilde{\nu} / k T}}$ 
 
 We have $q=q_{T, 3 D}\cdot q_{R} \cdot q_{vib} =0 $ for $T=0$. As $T \rightarrow 0$, the system has no accessible DOF and therefore a zero heat capacity. This makes sense because the energy spacing of quantum states has to be less than $kT$ for states of higher energy to be populated and participate in determining the specific heat. However, the moment you add the smallest amount of heat the temperature increases, some states become accessible and the specific heat becomes non-zero. The zero specific heat is more of an idealised limit than a real phenomenon.
