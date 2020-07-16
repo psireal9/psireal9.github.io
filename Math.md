@@ -4,6 +4,6 @@ title: Math
 order: 3
 ---
 
-* **Linear Differential Equation:** 
-    1. [Euler Method](Math/Euler_Method.md) 
+* **Lineare gewöhnliche Differentialgleichungen :** 
+    1. [Euler Verfahren](Math/Euler_Method.md) 
 
