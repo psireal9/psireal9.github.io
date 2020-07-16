@@ -134,9 +134,7 @@ Mathematically, one can show that using the thermodynamic definition of entropy 
 
 whereby $C_{x}$ is the heat capacity where the paramter $x$ is taken constant.
 
-This integral will diverge for all if $C_{x}$ is not a function of temperature! I found a physical interpretation of this limit [here](https://physics.stackexchange.com/questions/296330/what-does-zero-heat-capacity-mean). What they want to convey is that the number of DOF has a direct relationship with heat capacity ($C_{V}_{Total}=C_{V}_{trans}+C_{V}_{rot}+C_{V}_{vib}$).
-
-DOF in turn quantifies the number of accessible microstates of a system for a particular macrostate, i.e. number of microstates of a system at a particular temperature. So as the thermal energy $kT \rightarrow 0$, all particles/molecules are in the ground state ($Q_{Total} = 1$) and the system has a very limited number of DOF so $#DOF \rightarrow 0$ which results in the idealised limit of heat capacity. 
+This integral will diverge for all if $C_{x}$ is not a function of temperature! I found a physical interpretation of this limit [here](https://physics.stackexchange.com/questions/296330/what-does-zero-heat-capacity-mean). What they want to convey is that the number of DOF has a direct relationship with heat capacity ($C_{\mathrm{V}, m}=C_{\mathrm{V}, \mathrm{tr}}+C_{\mathrm{V}, \mathrm{rot}}+C_{\mathrm{V}, \mathrm{vib}}+C_{\mathrm{V}, m, \mathrm{el}}$). DOF in turn quantifies the number of accessible microstates of a system for a particular macrostate, i.e. number of microstates of a system at a particular temperature. So as the thermal energy $kT \rightarrow 0$, all particles/molecules are in the ground state ($Q_{Total} = 1$) and the system has a very limited number of DOF so $No. of DOF \rightarrow 0$ which results in the idealised limit of heat capacity.
 
 <u>Exercise 1:</u>
 The value of the Einstein temperature $\Theta_E$ that fits the Einstein crystal model heat-capacity formula to aluminum data is 240 K.
