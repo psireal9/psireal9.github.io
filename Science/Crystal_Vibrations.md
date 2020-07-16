@@ -71,7 +71,7 @@ The second step involves determining $\ln Q$ as you can derive other thermodynam
 [[Eq.4]](#eq4)
 <p align="center">
   <a name="eq5">
-  $$\begin{aligned} \ln (\mathcal{Z}) &=-\frac{U_{0}}{k_{\mathrm{B}} T}+3 N \ln (z)=-\frac{U_{0}}{k_{\mathrm{B}} T}+3 N \ln \left(\frac{1}{1-e^{-h \nu / k_{\mathrm{B}} T}}\right) \\
+  $$\begin{aligned} \ln (Q) &=-\frac{U_{0}}{k_{\mathrm{B}} T}+3 N \ln (z)=-\frac{U_{0}}{k_{\mathrm{B}} T}+3 N \ln \left(\frac{1}{1-e^{-h \nu / k_{\mathrm{B}} T}}\right) \\
 
 &=-\frac{U_{0}}{k_{\mathrm{B}} T}-3 N \ln \left(1-e^{-h \nu / k_{\mathrm{B}} T}\right) \end{aligned} [Eq.5]$$
   </a>
@@ -124,7 +124,9 @@ One can prove that
 
 whereby, $C_{\mathrm{V}}$ is the heat capacity derived using Einstein model.
 
-You might ask why should $\lim_{T \rightarrow 0} C_{\mathrm{V}}=0$. Mathematically, one can show that using the thermodynamic definition of entropy and the third law of the thermodynamics.
+You might ask what the meaning of $\lim_{T \rightarrow 0} C_{\mathrm{V}}=0$ is (You can show this by plugging in the expression for C_{\mathrm{V} based on Einstein Model). Notice we are discussing about ***limit***, which is the ouput a function approaches when it comes near a specific input but it is not equivalent to the function's output at this specific input, i.e. $C_{v}(T=0) \neq 0$. Actually, for Einstein model $C_{V}$ is not defined for $T=0$. This means the zero heat capacity is more of an idealised limit rather than a real phenomenon. But why is this necessary?   
+
+Mathematically, one can show that using the thermodynamic definition of entropy and the third law of the thermodynamics.
 
 <p align="center">  
   $$S\left(T_{0}\right)=\int_{0}^{T_{0}} d S=\int_{0}^{T_{0}} \frac{d Q}{T}=\int_{0}^{T_{0}} \frac{C_{x} d T}{T}$$
@@ -132,22 +134,7 @@ You might ask why should $\lim_{T \rightarrow 0} C_{\mathrm{V}}=0$. Mathematical
 
 whereby $C_{x}$ is the heat capacity where the paramter $x$ is taken constant.
 
-This integral will diverge for all $C_{x}(T=0)\neq 0$. But what is the physical meaning of zero heat capacity. Does it mean no matter how much heat one puts in the system, the temperature will continue to remain constant? 
-
-If we look at heat capacity in term of statiscal thermodynamics, we can explain this.
-
-A system has a non-zero capacity because it has internal degrees of freedom (translation, vibration, rotation) into which it can channel the absorbed energy and therefore raises the system's internal energy. 
-
-Each DOF contributes towards the total number of accessible states in term of partition functions. 
-* $q_{trans}=\frac{V}{\Lambda^{3}}=(2 \pi m k T)^{3 / 2} \frac{V}{h^{3}}$
-* $q_{rot}=\frac{1}{\sigma \beta h c B}=\frac{k T}{\sigma h c B}$
-* $q_{vib}=\frac{1}{1-e^{-\beta h c \widetilde{\nu}}}=\frac{1}{1-e^{-h c \widetilde{\nu} / k T}}$ 
-
-We have $q=q_{T, 3 D}\cdot q_{R} \cdot q_{vib} =0 $ for $T=0$. As $T \rightarrow 0$, the system has no accessible DOF and therefore a zero heat capacity. This makes sense because the energy spacing of quantum states has to be less than $kT$ for states of higher energy to be populated and participate in determining the specific heat. However, the moment you add the smallest amount of heat the temperature increases, some states become accessible and the specific heat becomes non-zero. The zero specific heat is more of an idealised limit than a real phenomenon.
-
-Another way to say the same thing is that if $C_{x}=0$, when you raise the temperature the energy remains constant, because $kT$ (which is 0 for $T=0$)is still less than $\varepsilon$, where $\varepsilon$ is the energy difference between the first excited and ground state. Therefore, no transition can occur and the system stays in the ground state. 
-
-Actually for Einstein model $C_{V}$ is not defined for $T=0$.
+This integral will diverge for all if $C_{x}$ is not a function of temperature! I found a physical interpretation of this limit [here](https://physics.stackexchange.com/questions/296330/what-does-zero-heat-capacity-mean). What they want to convey is that the number of DOF has a direct relationship with heat capacity ($\left(C_{V}\right)_{\text {Total}}=\left(C_{V}\right)_{T}+\left(C_{V}\right)_{R}+\left(C_{V}\right)_{V i b}$). DOF in turn quantifies the number of accessible microstates of a system for a particular macrostate, i.e. number of microstates of a system at a particular temperature. So as the thermal energy $kT \rightarrow 0$, all particles/molecules are in the ground state ($Q_{Total} = 1$) and the system has a very limited number of DOF so $#DOF \rightarrow 0$ which results in the idealised limit of heat capacity. 
 
 <u>Exercise 1:</u>
 The value of the Einstein temperature $\Theta_E$ that fits the Einstein crystal model heat-capacity formula to aluminum data is 240 K.
