@@ -1,6 +1,6 @@
 # Setup
 title:               Euler
-tagline:             'Playground for the Curious'
+tagline:             'Toys of Tomorrow'
 description:         'A place to wander and wonder.'
 url:                 https://psireal9.github.io
 baseurl:             '/lanyon/'
@@ -16,7 +16,7 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
-
+  - jekyll-stickyposts
 # Custom vars
 version:             1.1.0
 google_analytics_id: #UA-XXXX-Y
