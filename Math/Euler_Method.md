@@ -78,7 +78,7 @@ plt.show()
 ![image alt ><](../images/output_2_0.png#center)
 
 
-Jetzt können wir sehen, wie der Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
+Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
 
 
 ```python
