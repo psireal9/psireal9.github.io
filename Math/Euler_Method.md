@@ -147,7 +147,7 @@ plt.show()
 
 
 
-![image alt ><](../images/output_4_0.png#center)
+![image alt ><](../images/test2png.png#center)
 
 
 ```python
