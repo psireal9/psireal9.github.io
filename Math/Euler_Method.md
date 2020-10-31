@@ -27,11 +27,11 @@ mit einer gegebenen Funktion $f \in C[0, \infty)$. Ist $f \neq 0$ (nicht wie (Gl
 
 mit einer beliebigen Konstanten $\alpha \in \mathbb{R}$. Die Lösungen (Gl.4) bilden einen eindimensionalen **affinen** Raum (Vektorraum, welcher bei einem festen Wert verschoben wird).
 
-Wir interessieren uns nun für das zugehörige Anfangswertproblem (AWP) von (Gl.2)
-\begin{align}
+Wir interessieren uns nun für das zugehörige Anfangswertproblem (AWP) von (Gl.3)
+$$\begin{align}
 x^{\prime}(t) &=\lambda x(t)+f(t) \quad 0<t \leq T  \\
 x(0) &=x_{0} \quad (Gl.5)
-\end{align}
+\end{align}$$
 
 In diesem Post werden wir das Euler Verfahren, die einfachste Methode zur Lösung von AWP (Gl.3) diskutieren.
 Ich möchte zuerst (Gl.3) wie folgt umschreiben 
@@ -75,7 +75,7 @@ plt.show()
 ![image alt ><](../images/output_2_0.png#center)
 
 ### Euler Verfahren
-Wir wollen nun numerische Verfahren zur näherungsweisen Lösung des AWPs (Gl.3) mit der exakten Lösung 
+Wir wollen nun numerische Verfahren zur näherungsweisen Lösung des AWPs (Gl.3) mit der exakten Lösung (Gl.4)
 
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
 
