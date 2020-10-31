@@ -71,8 +71,6 @@ plt.title(r'Abb 1: Richtungsfeld einer DGL und Lösung zu Anfangswert $x_{0}$')
 plt.show()
 
 ```
-
-
 ![image alt ><](../images/output_2_0.png#center)
 
 
