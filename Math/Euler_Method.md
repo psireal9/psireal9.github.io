@@ -28,8 +28,8 @@ mit einer beliebigen Konstanten $\alpha \in \mathbb{R}$. Die Lösungen von (Gl.2
 
 Wir interessieren uns nun für das zugehörige Anfangswertproblem (AWP) von (Gl.2)
 \begin{align}
-x^{\prime}(t)&=\lambda x(t)+f(t) \quad 0<t \leq T \\
-x(0)&=x_{0} \quad (Gl.3)
+x^{\prime}(t) &=\lambda x(t)+f(t) \quad 0<t \leq T \\
+x(0) &=x_{0} \quad (Gl.3)
 \end{align}
 
 coco meow
