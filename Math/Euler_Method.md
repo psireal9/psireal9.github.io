@@ -32,7 +32,7 @@ x^{\prime}(t)&=\lambda x(t)+f(t) \quad 0<t \leq T \\
 x(0)&=x_{0} \quad (Gl.3)
 \end{align}
 
-
+coco meow
 
 In diesem Post werden wir das Euler Verfahren, die einfachste Methode zur Lösung von AWP (Gl.3) diskutieren.
 Ich möchte zuerst (Gl.3) wie folgt umschreiben 
