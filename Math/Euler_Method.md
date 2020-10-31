@@ -32,8 +32,6 @@ x^{\prime}(t) &=\lambda x(t)+f(t) \quad 0<t \leq T \\
 x(0) &=x_{0} \quad (Gl.3)
 \end{align}
 
-coco meow
-
 In diesem Post werden wir das Euler Verfahren, die einfachste Methode zur Lösung von AWP (Gl.3) diskutieren.
 Ich möchte zuerst (Gl.3) wie folgt umschreiben 
 \begin{equation}\begin{array}{l}
@@ -41,7 +39,7 @@ x^{\prime}(t)=g(x(t),t) \quad 0<t \leq T \\
 x(0)=x_{0} \quad (Gl.4)
 \end{array}\end{equation}
 
-Wir können uns die DFG $x^{\prime}(t)=g(x(t),t)$ durch das zugehörige Richtungsfeld veranschaulichen. Zu jedem Punkt $(x, t) \in \mathbb{R}^{2}$ zeichnen wir dabei einen Richtungspfeil mit Steigung $g(x(t),t)$, z.B. den Vektor $(1, g(x, t))^{T}$. Eine Funktion löst die DGL genau dann, wenn an jedem Punkt durch den die Funktion geht, die Steigung der Funktion und die Steigung des Richtungspfeils übereinstimmen. Gegeben den Anfangswert $x(t=0)=x_{0}$ können wir die DGL zeichnerisch lösen, indem wir ausgehend vom Startwert $(0,x_{0})$ die Funktion passend zu den Richtungspfeilen zeichnen. Als Beispiel betrachten wir die Funktion $x(t)=e^{t}-\frac{1}{2}t^{2}$ und die folgende DFG $x^{\prime}=x-t=e^{t}-\frac{1}{2}t^{2}-t$
+Wir können uns die DFG $x^{\prime}(t)=g(x(t),t)$ durch das zugehörige Richtungsfeld veranschaulichen. Zu jedem Punkt $(x, t) \in \mathbb{R}^{2}$ zeichnen wir dabei einen Richtungspfeil mit Steigung $g(x(t),t)$, z.B. den Vektor $(1, g(x, t))^{T}$. Eine Funktion löst die DGL genau dann, wenn an jedem Punkt durch den die Funktion geht, die Steigung der Funktion und die Steigung des Richtungspfeils übereinstimmen. Gegeben den Anfangswert $x(t=0)=x_{0}$ können wir die DGL zeichnerisch lösen, indem wir ausgehend vom Startwert $(0,x_{0})$ die Funktion passend zu den Richtungspfeilen zeichnen. Als Beispiel betrachten wir die Funktion $x(t)=e^{t}-\frac{1}{2}t^{2}$, die entsprechende DFG $x^{\prime}=e^{t}-t$ und der Startwert $x(0)=1$
 
 
 ```python
