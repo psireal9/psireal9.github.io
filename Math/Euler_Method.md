@@ -40,7 +40,7 @@ Ich möchte zuerst (Gl.3) wie folgt umschreiben
 <p align="center">
   $$\begin{align}
 x^{\prime}(t) &=g(x(t),t) \quad 0<t \leq T  \\
-x(0) &=x_{0} \quad (Gl.4)
+x(0) &=x_{0} \quad (Gl.6)
 \end{align}$$
 </p>
 
@@ -100,7 +100,7 @@ $$
 
 Indem wir auf die gleiche Weise fortfahren, erhalten wir das Euler’sche Polygonzugverfahren, eine iterative Formel zur Berechnung der Zeitentwicklung von $x$.
 \begin{equation}
-x_{k+1}=x_{k}+\tau\left(\lambda x_{k}+f\left(t_{k}\right)\right), \quad k=0, \ldots, n-1
+x_{k+1}=x_{k}+\tau\left(\lambda x_{k}+f\left(t_{k}\right)\right), \quad k=0, \ldots, n-1 \quad (Gl.7)
 \end{equation}
 
 Wir werden auch die Gitterfunktion einführen, die später verwendet wird, um die diskrete Kondition zu bestimmen
@@ -108,6 +108,7 @@ Wir werden auch die Gitterfunktion einführen, die später verwendet wird, um di
 x_{\Delta}\left(t_{k}\right)=x_{k}, \quad k=0, \ldots, n
 \end{equation}
 
+Da (Gl.7) eine explizite Vorschrift zur Berechnung von $x_{k+1}$ liefert, nennt man dieses Verfahren auch **explizites Euler-Verfahren**.
 
 ### Anwendung in physikalischen Modellen
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
