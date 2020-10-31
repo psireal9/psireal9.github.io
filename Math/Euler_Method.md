@@ -39,8 +39,8 @@ In diesem Post werden wir das Euler Verfahren, die einfachste Methode zur Lösun
 Ich möchte zuerst (Gl.3) wie folgt umschreiben
 <p align="center">
   $$\begin{align}
-x^{\prime}(t)=g(x(t),t) \quad 0<t \leq T  \\
-x(0)=x_{0} \quad (Gl.4)
+x^{\prime}(t) &=g(x(t),t) \quad 0<t \leq T  \\
+x(0) &=x_{0} \quad (Gl.4)
 \end{align}$$
 </p>
 
@@ -87,8 +87,13 @@ Wir wollen nun numerische Verfahren zur näherungsweisen Lösung des AWPs (Gl.3)
 \tau &=t_{k+1}-t_{k}
 \end{align}$$
 </p>
-
-
+Der nächster Punkt $x_{1}$ lässt sich anhand der Taylor-Entwicklung erster Ordnung mit $x_{0}=x{0}$ als Entwicklungspunkt approximieren.
+$$
+\begin{aligned}
+x(t_{1}) &\approx x(t_{0}) + \tau \cdot x'(t_{0}) \\
+&= x_{0} + \tau \cdot (\lamda x_{0}+f(t_{0})) = x_{1}
+\end{aligned}
+$$
 
 ### Anwendung in physikalischen Modellen
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
