@@ -87,13 +87,27 @@ Wir wollen nun numerische Verfahren zur näherungsweisen Lösung des AWPs (Gl.3)
 \tau &=t_{k+1}-t_{k}
 \end{align}$$
 </p>
-Der nächster Punkt $x_{1}$ lässt sich anhand der Taylor-Entwicklung erster Ordnung mit $x_{0}=x{0}$ als Entwicklungspunkt approximieren.
-$$
+Der nächster Punkt $x_{1}$ lässt sich anhand der Taylor-Entwicklung erster Ordnung mit $x_{0}=x(t_{0})$ als Entwicklungspunkt approximieren.
+  
+<p align="center">
+  $$
 \begin{aligned}
 x(t_{1}) &\approx x(t_{0}) + \tau \cdot x'(t_{0}) \\
-&= x_{0} + \tau \cdot (\lamda x_{0}+f(t_{0})) = x_{1}
+&= x_{0} + \tau \cdot (\lambda x_{0}+f(t_{0})) = x_{1}
 \end{aligned}
 $$
+</p>
+
+Indem wir auf die gleiche Weise fortfahren, erhalten wir das Euler’sche Polygonzugverfahren, eine iterative Formel zur Berechnung der Zeitentwicklung von $x$.
+\begin{equation}
+x_{k+1}=x_{k}+\tau\left(\lambda x_{k}+f\left(t_{k}\right)\right), \quad k=0, \ldots, n-1
+\end{equation}
+
+Wir werden auch die Gitterfunktion einführen, die später verwendet wird, um die diskrete Kondition zu bestimmen
+\begin{equation}
+x_{\Delta}\left(t_{k}\right)=x_{k}, \quad k=0, \ldots, n
+\end{equation}
+
 
 ### Anwendung in physikalischen Modellen
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
