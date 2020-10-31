@@ -28,17 +28,21 @@ mit einer gegebenen Funktion $f \in C[0, \infty)$. Ist $f \neq 0$ (nicht wie (Gl
 mit einer beliebigen Konstanten $\alpha \in \mathbb{R}$. Die Lösungen (Gl.4) bilden einen eindimensionalen **affinen** Raum (Vektorraum, welcher bei einem festen Wert verschoben wird).
 
 Wir interessieren uns nun für das zugehörige Anfangswertproblem (AWP) von (Gl.3)
-$$\begin{align}
+<p align="center">
+  $$\begin{align}
 x^{\prime}(t) &=\lambda x(t)+f(t) \quad 0<t \leq T  \\
 x(0) &=x_{0} \quad (Gl.5)
 \end{align}$$
+</p>
 
 In diesem Post werden wir das Euler Verfahren, die einfachste Methode zur Lösung von AWP (Gl.3) diskutieren.
-Ich möchte zuerst (Gl.3) wie folgt umschreiben 
-\begin{equation}\begin{array}{l}
+Ich möchte zuerst (Gl.3) wie folgt umschreiben
+<p align="center">
+  $$\begin{align}
 x^{\prime}(t)=g(x(t),t) \quad 0<t \leq T  \\
 x(0)=x_{0} \quad (Gl.4)
-\end{array}\end{equation}
+\end{align}$$
+</p>
 
 Wir können uns die DFG $x^{\prime}(t)=g(x(t),t)$ durch das zugehörige Richtungsfeld veranschaulichen. Zu jedem Punkt $(x, t) \in \mathbb{R}^{2}$ zeichnen wir dabei einen Richtungspfeil mit Steigung $g(x(t),t)$, z.B. den Vektor $(1, g(x, t))^{T}$. Eine Funktion löst die DGL genau dann, wenn an jedem Punkt durch den die Funktion geht, die Steigung der Funktion und die Steigung des Richtungspfeils übereinstimmen. Gegeben den Anfangswert $x(t=0)=x_{0}$ können wir die DGL zeichnerisch lösen, indem wir ausgehend vom Startwert $(0,x_{0})$ die Funktion passend zu den Richtungspfeilen zeichnen. Als Beispiel betrachten wir die Funktion $x(t)=e^{t}-\frac{1}{2}t^{2}$, die entsprechende DFG $x^{\prime}=e^{t}-t$ und der Startwert $x(0)=1$
 
@@ -75,8 +79,18 @@ plt.show()
 ![image alt ><](../images/output_2_0.png#center)
 
 ### Euler Verfahren
-Wir wollen nun numerische Verfahren zur näherungsweisen Lösung des AWPs (Gl.3) mit der exakten Lösung (Gl.4)
+Wir wollen nun numerische Verfahren zur näherungsweisen Lösung des AWPs (Gl.3) mit der exakten Lösung (Gl.4) konstruieren und analysieren. Dazu wählen wir zunächst ein äquidistanter Gitter, wobei die Schrittweite $\tau$ konstant ist.
 
+<p align="center">
+  $$\begin{align}
+\Delta &=\left\{0=t_{0}<t_{1}<\cdots<t_{n}=T\right\}  \\
+\tau &=t_{k+1}-t_{k}
+\end{align}$$
+</p>
+
+
+
+### Anwendung in physikalischen Modellen
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
 
 
