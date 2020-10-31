@@ -54,7 +54,7 @@ t = np.arange(-2,2.2,0.2)
 
 X, T = np.meshgrid(x, t)
 u=1
-v= np.exp(T)-(1/2)*T**2-T #die Ableitung 
+v= np.exp(T)-T #die Ableitung 
 
 # exakte Lösung
 t_sol=np.linspace(-2,0.9)
