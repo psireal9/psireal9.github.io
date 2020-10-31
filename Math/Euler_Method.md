@@ -2,6 +2,7 @@
 layout: post
 title: Euler Verfahren
 ---
+### Einführung in Lineare Differentialgleichungen 1. Ordnung
 Wir betrachten zuerst die Differentialgleichung (DFG):
 \begin{equation}x^{\prime}(t)=\lambda x(t) \quad t>0 \quad (Gl.1)\end{equation}
 
@@ -14,28 +15,28 @@ mit gegebenem $\lambda \in \mathbb{R}$. Die DFG (GL.1) heißt:
 Physikalische bzw ökonomische Phänomene, die von der DFG (Gl.1) beschrieben werden können, sind zB. radioaktiver Zerfall, Reaktionskinetik, Zinsenszins, etc. 
 
 Offenbar ist 
-\begin{equation}x=\alpha e^{\lambda t}\end{equation}
+\begin{equation}x=\alpha e^{\lambda t} \quad (Gl.2)\end{equation}
 
 für jedes beliebige $\alpha \in \mathbb{R}$. Die Lösungen der linearen DFG 1.Ordnung (Gl.1) bilden sich einen eindimensionalen linearen Raum, welcher von der Basisfunktion $\psi_{1}(t)=e^{\lambda t}$ aufgespannt wird.
 
 Als nächstes betrachten wir ein etwas schwierigeres Problem, nämlich die DFG
-\begin{equation}x^{\prime}(t)=\lambda x(t)+f(t) \quad t>0  (Gl.2)\end{equation}
+\begin{equation}x^{\prime}(t)=\lambda x(t)+f(t) \quad t>0  \quad (Gl.3)\end{equation}
 
-mit einer gegebenen Funktion $f \in C[0, \infty)$. Ist $f \neq 0$ (nicht wie (Gl.1)), so ist die Nullfunktion **keine** Lösung von (Gl.2). Die DFG wird nun **inhomogen**. Alle Lösungen von (Gl.2) haben die Gestalt. 
-\begin{equation}x(t)=\alpha e^{\lambda t}+\int_{0}^{t} f(\eta) e^{\lambda(t-\eta)} d \eta\end{equation}
+mit einer gegebenen Funktion $f \in C[0, \infty)$. Ist $f \neq 0$ (nicht wie (Gl.1)), so ist die Nullfunktion **keine** Lösung von (Gl.3). Die DFG wird nun **inhomogen**. Alle Lösungen von (Gl.2) haben die Gestalt. 
+\begin{equation}x(t)=\alpha e^{\lambda t}+\int_{0}^{t} f(\eta) e^{\lambda(t-\eta)} d \eta \quad (Gl.4)\end{equation}
 
-mit einer beliebigen Konstanten $\alpha \in \mathbb{R}$. Die Lösungen von (Gl.2) bilden einen eindimensionalen **affinen** Raum (Vektorraum, welcher bei einem festen Wert verschoben wird).
+mit einer beliebigen Konstanten $\alpha \in \mathbb{R}$. Die Lösungen (Gl.4) bilden einen eindimensionalen **affinen** Raum (Vektorraum, welcher bei einem festen Wert verschoben wird).
 
 Wir interessieren uns nun für das zugehörige Anfangswertproblem (AWP) von (Gl.2)
 \begin{align}
-x^{\prime}(t) &=\lambda x(t)+f(t) \quad 0<t \leq T \\
-x(0) &=x_{0} \quad (Gl.3)
+x^{\prime}(t) &=\lambda x(t)+f(t) \quad 0<t \leq T  \\
+x(0) &=x_{0} \quad (Gl.5)
 \end{align}
 
 In diesem Post werden wir das Euler Verfahren, die einfachste Methode zur Lösung von AWP (Gl.3) diskutieren.
 Ich möchte zuerst (Gl.3) wie folgt umschreiben 
 \begin{equation}\begin{array}{l}
-x^{\prime}(t)=g(x(t),t) \quad 0<t \leq T \\
+x^{\prime}(t)=g(x(t),t) \quad 0<t \leq T  \\
 x(0)=x_{0} \quad (Gl.4)
 \end{array}\end{equation}
 
@@ -73,6 +74,8 @@ plt.show()
 ```
 ![image alt ><](../images/output_2_0.png#center)
 
+### Euler Verfahren
+Wir wollen nun numerische Verfahren zur näherungsweisen Lösung des AWPs (Gl.3) mit der exakten Lösung 
 
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
 
