@@ -190,6 +190,7 @@ plt.ylabel('x')
 plt.show()
 
 ```
+Um das unterschiedliche Verhalten der beiden Verfahren zu verstehen, wenden wir uns an die Auswirkung von Störungen des Anfangswerts und der rechten Seite auf die berechnete Gitterfunktion, welche zusammen als **diskrete Kondition** bezeichnet wird.    
 ![image alt ><](../images/output_3_0.png#center)
 ### Anwendung in physikalischen Modellen
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
