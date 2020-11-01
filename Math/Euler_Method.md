@@ -77,6 +77,14 @@ plt.show()
 
 ```
 ![image alt ><](../images/output_2_0.png#center)
+Für die absolute Kondition  $k_{abs} des AWPs (Gl.5) gilt
+
+\begin{equation}
+\begin{array}{l}
+  \underline{\lambda $<$ 0} 1 \leq k_{abs}(AWP) \leq 1+T \\
+  \underliner{\lambda $\geq$ 0} e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
+\end{array}
+\end{equation}
 
 ### Euler Verfahren
 Wir wollen nun numerische Verfahren zur näherungsweisen Lösung des AWPs (Gl.3) mit der exakten Lösung (Gl.4) konstruieren und analysieren. Dazu wählen wir zunächst ein äquidistanter Gitter, wobei die Schrittweite $\tau$ konstant ist.
@@ -121,6 +129,68 @@ Verwendet man stattdessen den rückwartsgenommenen Differenzenquotienten, so erg
   $$\Rightarrow x_{k+1}=\frac{1}{1-\tau \lambda}\left(x_{k}+f\left(t_{k+1}\right)\right), \quad k=0, \ldots, n-1 \quad (Gl.8) $$
 </p>
 
+Die Frage ist nun, wann welches Verfahren anzuwenden ist?
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def explicitEuler(A, f, x0, T, n):
+    '''
+    Solve x'(t) = lambda*x(t) + f(t), x(0) = x0
+    Input
+        lambda = A
+        x0: Anfangswert
+        n: Zeitintervall
+        T: Endzeitpunkt
+    Output
+        x ∈ R^(n+1) (inklusive Startwert)
+    '''
+
+    x = np.zeros(n+1)
+    x[0] = x0
+    t = [0 + (i/n) * (T - 0) for i in range(n)]
+    tau = T/n
+    for k in range(0,n):
+        x[k+1] = x[k] + tau*(A*x[k]+f(t[k]))
+        #x[k + 1] = x[k] + tau * (A * x[k])
+    return x
+
+def implicitEuler(A, f, x0, T, n):
+    '''
+    Solve x'(t) = lambda*x(t) + f(t), x(0) = x0
+    Input
+        lambda = A
+        x0: Anfangswert
+        n: Zeitintervall
+        T: Endzeitpunkt
+    Output
+        x ∈ R^(n+1) (inklusive Startwert)
+    '''
+
+    x = np.zeros(n+1)
+    x[0] = x0
+    t = [0 + (i/n) * (T - 0) for i in range(n+1)]
+    tau = T/n
+    for k in range(0,n):
+        x[k+1] = (1/(1-tau*A))*(x[k]+tau*f(t[k+1]))
+
+    return x
+
+def exact_solution(A,x0,t):
+    return x0*np.exp(A*t)
+
+time = np.linspace(0,1,11)
+plt.plot(time, explicitEuler(-21, lambda x:0, 1, 1, 10), label='explicit Euler')
+plt.plot(time, exact_solution(-21,1,time), label='exact solution')
+plt.plot(time, implicitEuler(-21, lambda x:0, 1, 1, 10), label='implicit Euler')
+plt.legend()
+plt.xlabel('t')
+plt.ylabel('x')
+plt.show()
+
+```
+![image alt ><](../images/output_3_0.png#center)
 ### Anwendung in physikalischen Modellen
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
 
