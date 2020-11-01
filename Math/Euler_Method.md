@@ -77,13 +77,13 @@ plt.show()
 
 ```
 ![image alt ><](../images/output_2_0.png#center)
-Für die absolute Kondition  $k_{abs} des AWPs (Gl.5) gilt
+Für die absolute Kondition  $k_{abs}$ des AWPs (Gl.5) gilt
 
 <p align="center">
 $$\begin{array}{l}
-  \underline{\lambda < 0} 1 \leq k_{abs}(AWP) \leq 1+T \\
-  \underline{\lambda $\geq$ 0} e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
-$$\end{array}
+  \underline{\lambda < 0}: \qquad 1 \leq k_{abs}(AWP) \leq 1+T \\
+  \underline{\lambda $\geq$ 0}: \qquad e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
+\end{array}$$
 </p>
 
 ### Euler Verfahren
