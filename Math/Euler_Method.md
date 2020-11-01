@@ -193,14 +193,16 @@ plt.show()
   
 ![image alt ><](../images/output_3_0.png#center)
 
-Um das unterschiedliche Verhalten der beiden Verfahren zu verstehen, wenden wir uns an die Auswirkung von Störungen des Anfangswerts und der rechten Seite auf die berechnete Gitterfunktion, welche zusammen als **diskrete Kondition**, $\vert x_{\Delta}-\tilde{x}_{\Delta} \vert _{\infty}$, bezeichnet wird. Für explizites Euler-Verfahren gilt nämlich:
+Um das unterschiedliche Verhalten der beiden Verfahren zu verstehen, wenden wir uns an die Auswirkung von Störungen des Anfangswerts und der rechten Seite auf die berechnete Gitterfunktion, welche zusammen als **diskrete Kondition**, $\Vert x_{\Delta}-\tilde{x}_{\Delta} \Vert _{\infty}$, bezeichnet wird. Für explizites Euler-Verfahren gilt nämlich:
+
 <p align="center">
 $$\begin{align}
-  \underline{\lambda < 0 & \tau \leq \frac{2}{|\lambda|}}: \qquad & 1 \leq k_{abs}(AWP) \leq 1+T \\
+  \underline{\lambda < 0 \& \tau \leq \frac{2}{|\lambda|}}: \qquad & 1 \leq k_{abs}(AWP) \leq 1+T \\
   \underline{\lambda \geq 0}: \qquad & e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
 \end{align}$$
 </p>
 
+Vergleichen wir mit $k_{abs}(AWP)$, dann sehen wir, dass es $k_{abs}(exEuler) \leq k_{abs}(AWP)$ gilt. Im Vergleich zum kontinuierlichen Problem findet also *keine zusätzliche Fehlerverstärkung statt*. Das explizite Euler-Verfahren ist damit <u>stabil</u>.
 
 ### Anwendung in physikalischen Modellen
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
