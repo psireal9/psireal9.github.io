@@ -114,10 +114,12 @@ Da (Gl.7) eine explizite Vorschrift zur Berechnung von $x_{k+1}$ liefert, nennt 
 \end{equation}
 
 Verwendet man stattdessen den rückwartsgenommenen Differenzenquotienten, so ergibt sich das **implizite Euler-Verfahren**
-\begin{equation}
-\frac{x_{k+1}-x_{k}}{\tau}=\lambda x_{k+1}+f\left(t_{k+1}\right), \quad k=0, \ldots, n-1 \\
-\Rightarrow x_{k+1}=\frac{1}{1-\tau \lambda}\left(x_{k}+f\left(t_{k+1}\right)\right), \quad k=0, \ldots, n-1 \quad (Gl.8)
-\end{equation}
+<p align="center">
+  $$\frac{x_{k+1}-x_{k}}{\tau}=\lambda x_{k+1}+f\left(t_{k+1}\right), \quad k=0, \ldots, n-1 $$
+</p>
+<p align="center">
+  $$\Rightarrow x_{k+1}=\frac{1}{1-\tau \lambda}\left(x_{k}+f\left(t_{k+1}\right)\right), \quad k=0, \ldots, n-1 \quad (Gl.8) $$
+</p>
 
 ### Anwendung in physikalischen Modellen
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
