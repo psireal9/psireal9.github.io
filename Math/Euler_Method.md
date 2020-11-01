@@ -197,12 +197,13 @@ Um das unterschiedliche Verhalten der beiden Verfahren zu verstehen, wenden wir 
 
 <p align="center">
 $$\begin{align}
-  \underline{\lambda < 0} \text{und} \underline{\tau < \frac{2}{|\lambda|}}: \qquad & 1 \leq k_{abs}(AWP) \leq 1+T \\
+  \underline{\lambda < 0} \quad \text{und} \quad \underline{\tau < \frac{2}{|\lambda|}}: \qquad & 1 \leq k_{abs}(AWP) \leq 1+T \\
   \underline{\lambda \geq 0}: \qquad & e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
 \end{align}$$
 </p>
 
 Vergleichen wir mit $k_{abs}(AWP)$, dann sehen wir, dass es $k_{abs}(exEuler) \leq k_{abs}(AWP)$ gilt. Im Vergleich zum kontinuierlichen Problem findet also *keine zusätzliche Fehlerverstärkung statt*. Das explizite Euler-Verfahren ist damit <u>stabil</u>. Im Falle $\lambda < 0$ ist die Stabilität allerdings an die Bedingung $0 < \tau < \frac{2}{|\lambda|}$. Ist diese verletzt, so folgt
+
 \begin{equation}
 \Vert x_{\Delta}-\tilde{x}_{\Delta} \Vert _{\infty}=\sigma \vert x_{0}-\tilde{x}_{0} \vert , \quad \sigma \gg 1
 \end{equation}
