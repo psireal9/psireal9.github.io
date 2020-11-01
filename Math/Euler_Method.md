@@ -193,10 +193,10 @@ plt.show()
   
 ![image alt ><](../images/output_3_0.png#center)
 
-Um das unterschiedliche Verhalten der beiden Verfahren zu verstehen, wenden wir uns an die Auswirkung von Störungen des Anfangswerts und der rechten Seite auf die berechnete Gitterfunktion, welche zusammen als **diskrete Kondition**, $\left\|x_{\Delta}-\tilde{x}_{\Delta}\right\|_{\infty}$, bezeichnet wird. Für explizites Euler-Verfahren gilt nämlich:
+Um das unterschiedliche Verhalten der beiden Verfahren zu verstehen, wenden wir uns an die Auswirkung von Störungen des Anfangswerts und der rechten Seite auf die berechnete Gitterfunktion, welche zusammen als **diskrete Kondition**, $||x_{\Delta}-\tilde{x}_{\Delta}||_{\infty}$, bezeichnet wird. Für explizites Euler-Verfahren gilt nämlich:
 <p align="center">
 $$\begin{align}
-  \underline{\lambda < 0 und \tau \leq \frac{2}{|\lambda|}}: \qquad & 1 \leq k_{abs}(AWP) \leq 1+T \\
+  \underline{\lambda < 0 \quad & \quad \tau \leq \frac{2}{|\lambda|}}: \qquad & 1 \leq k_{abs}(AWP) \leq 1+T \\
   \underline{\lambda \geq 0}: \qquad & e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
 \end{align}$$
 </p>
