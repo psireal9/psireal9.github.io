@@ -82,7 +82,7 @@ Für die absolute Kondition  $k_{abs}$ des AWPs (Gl.5) gilt
 <p align="center">
 $$\begin{array}{l}
   \underline{\lambda < 0}: \qquad 1 \leq k_{abs}(AWP) \leq 1+T \\
-  \underline{\lambda $\geq$ 0}: \qquad e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
+  \underline{\lambda \geq 0}: \qquad e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
 \end{array}$$
 </p>
 
@@ -129,7 +129,7 @@ Verwendet man stattdessen den rückwartsgenommenen Differenzenquotienten, so erg
   $$\Rightarrow x_{k+1}=\frac{1}{1-\tau \lambda}\left(x_{k}+f\left(t_{k+1}\right)\right), \quad k=0, \ldots, n-1 \quad (Gl.8) $$
 </p>
 
-Die Frage ist nun, wann welches Verfahren anzuwenden ist?
+Die Frage ist nun, wann welches Verfahren anzuwenden ist? Betrachten wir eine homogene DFG der Form (Gl.1), wobei $\lambda = -21$, $x_{0}=1$, $T=1$ und $\tau = \frac{1}{10}$ (also 10 Teilintervalle).
 
 ```python
 import numpy as np
