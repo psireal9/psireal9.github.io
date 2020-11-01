@@ -197,7 +197,7 @@ Um das unterschiedliche Verhalten der beiden Verfahren zu verstehen, wenden wir 
 
 <p align="center">
 $$\begin{align}
-  \underline{\lambda < 0 \text{und} \tau < \frac{2}{|\lambda|}}: \qquad & 1 \leq k_{abs}(AWP) \leq 1+T \\
+  \underline{\lambda < 0} \text{und} \underline{\tau < \frac{2}{|\lambda|}}: \qquad & 1 \leq k_{abs}(AWP) \leq 1+T \\
   \underline{\lambda \geq 0}: \qquad & e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
 \end{align}$$
 </p>
