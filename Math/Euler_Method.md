@@ -79,12 +79,12 @@ plt.show()
 ![image alt ><](../images/output_2_0.png#center)
 Für die absolute Kondition  $k_{abs} des AWPs (Gl.5) gilt
 
-\begin{equation}
-\begin{array}{l}
-  \underline{\lambda $<$ 0} 1 \leq k_{abs}(AWP) \leq 1+T \\
-  \underliner{\lambda $\geq$ 0} e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
-\end{array}
-\end{equation}
+<p align="center">
+$$\begin{array}{l}
+  \underline{\lambda < 0} 1 \leq k_{abs}(AWP) \leq 1+T \\
+  \underline{\lambda $\geq$ 0} e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
+$$\end{array}
+</p>
 
 ### Euler Verfahren
 Wir wollen nun numerische Verfahren zur näherungsweisen Lösung des AWPs (Gl.3) mit der exakten Lösung (Gl.4) konstruieren und analysieren. Dazu wählen wir zunächst ein äquidistanter Gitter, wobei die Schrittweite $\tau$ konstant ist.
