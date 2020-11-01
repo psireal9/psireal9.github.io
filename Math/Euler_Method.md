@@ -302,6 +302,9 @@ plt.show()
 
 
 Der Euler-Integrator ist nicht zeitumkehrbar und konserviert keine Energie. 
-Wir können die Kontraktion des Volumens des Phasenraums sehen, wie es auftreten würde, wenn die Energiedissipation stattfindet. Es wird daher nicht für molekulardynamische Simulationen empfohlen.
+Wir können die Kontraktion des Volumens des Phasenraums sehen, wie es auftreten würde, wenn die Energiedissipation stattfindet. Es wird daher nicht für dynamische Simulationen empfohlen.
 
+Der Inhalt dieses Posts wurde geschrieben basierend auf: 
+1. *Vorlesungskript zum Computerorientierte Mathematik II (FU Berlin)*
+2. *Vorlesungskript zum Moleküldynamik (FU Berlin)*
 
