@@ -202,11 +202,13 @@ $$\begin{align}
 \end{align}$$
 </p>
 
-Vergleichen wir mit $k_{abs}(AWP)$, dann sehen wir, dass es $k_{abs}(exEuler) \leq k_{abs}(AWP)$ gilt. Im Vergleich zum kontinuierlichen Problem findet also *keine zusätzliche Fehlerverstärkung statt*. Das explizite Euler-Verfahren ist damit <u>stabil</u>. Im Falle $\lambda < 0$ ist die Stabilität allerdings an die Bedingung $0 < \tau < \frac{2}{|\lambda|}$. Ist diese verletzt, so folgt
+Vergleichen wir mit $k_{abs}(AWP)$, dann sehen wir, dass es $k_{abs}(exEuler) \leq k_{abs}(AWP)$ gilt. Im Vergleich zum kontinuierlichen Problem findet also *keine zusätzliche Fehlerverstärkung statt*. Das explizite Euler-Verfahren ist damit <u>stabil</u>. Im Falle $\lambda < 0$ ist die Stabilität allerdings an die Bedingung $0 < \tau < \frac{2}{\vert \lambda \vert}$. Ist diese verletzt, so folgt
 
-\begin{equation}
+<p align="center">
+$$
 \Vert x_{\Delta}-\tilde{x}_{\Delta} \Vert _{\infty}=\sigma \vert x_{0}-\tilde{x}_{0} \vert , \quad \sigma \gg 1
-\end{equation}
+$$
+</p>
 
 Man kann (Gl.7) für $f(t)=0$ wie folgt umschreiben
 \begin{equation}
