@@ -222,7 +222,14 @@ Das implizite Euler-Verfahren ist im Falle $\lambda <0$ für beliebiege Schrittw
 vermeiden und auch um die Durchführbarkeit des Verfahrens zu sichern, muß die Stabilitätsbedingung $\tau < \frac{1}{\lambda}$ erfüllt sein. Wenn $\tau > \frac{1}{\lambda}$ ist, ist $\frac{1}{1-\tau \lambda}<1$ und dann wechselt wieder $x_{k+1}$ zwischen positivem und negativem Wert, bis $\frac{1}{1-\tau \lambda} \cdot f(t_{k+1})$ so negativ, dass die alle folgenden $x_{k+1}$ negativ sind. (Zum Ausprobieren: $\lambda = 16, f(t)=t, T=8, x_{0}=1, n=60 oder n=120$) 
 
 ### Anwendung in physikalischen Modellen
-Jetzt können wir sehen, wie das explizite Euler-Verfahren beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten nun den klassischen harmonischen Oszillator. Um die Newton-Gleichung mit der Euler-Methode zu lösen, fügen wir den zweiten Term hinzu.
+Jetzt können wir sehen, wie das explizite Euler-Verfahren beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten nun den klassischen harmonischen Oszillator. Um die Newton-Gleichung mit der Euler-Methode zu integrieren, fügen wir den zweiten Term hinzu.
+\begin{equation}
+\mathbf{r}_{i}(t+\Delta)=\mathbf{r}_{i}(t)+\mathbf{v}_{i}(t) \Delta+\frac{1}{2 m_{i}} \mathbf{F}_{i}(t) \Delta^{2}+\mathcal{O}\left(\Delta^{3}\right)
+\end{equation}
+
+\begin{equation}
+\mathbf{v}_{i}(t+\Delta)=\mathbf{v}_{i}(t)+\frac{1}{m_{i}} \mathbf{F}_{i}(t) \Delta+\mathcal{O}\left(\Delta^{2}\right)
+\end{equation}
 
 
 ```python
@@ -294,9 +301,7 @@ plt.show()
 ![image alt ><](../images/test2png.png#center)
 
 
-```python
-
-```
-
+Der Euler-Integrator ist nicht zeitumkehrbar und konserviert keine Energie. 
+Wir können die Kontraktion des Volumens des Phasenraums sehen, wie es auftreten würde, wenn die Energiedissipation stattfindet. Es wird daher nicht für molekulardynamische Simulationen empfohlen.
 
 
