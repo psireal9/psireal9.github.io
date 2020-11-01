@@ -197,8 +197,8 @@ Um das unterschiedliche Verhalten der beiden Verfahren zu verstehen, wenden wir 
 
 <p align="center">
 $$\begin{align}
-  \underline{\lambda < 0} \quad \text{und} \quad \underline{\tau < \frac{2}{|\lambda|}}: \qquad & 1 \leq k_{abs}(AWP) \leq 1+T \\
-  \underline{\lambda \geq 0}: \qquad & e^{\lambda T} \leq k_{abs}(AWP) \leq (1+T)e^{\lambda T}
+  \underline{\lambda < 0} \quad \text{und} \quad \underline{\tau < \frac{2}{|\lambda|}}: \qquad & 1 \leq k_{abs}(exEuler) \leq 1+T \\
+  \underline{\lambda \geq 0}: \qquad & e^{\lambda T} \leq k_{abs}(exEuler) \leq (1+T)e^{\lambda T}
 \end{align}$$
 </p>
 
@@ -215,7 +215,12 @@ Man kann (Gl.7) für $f(t)=0$ wie folgt umschreiben
 x_{k+1}=x_{k}+\tau \lambda x_{k} = (1+ \tau \lambda)^{k+1} \cdot x_{0}
 \end{equation}
 
-Für $\tau > \frac{2}{|\lambda|}$ (wie in unserem Beispiel) ist $1+ \tau \lambda < -1$. Wenn $k+1$ gerade ist, ist $(1+ \tau \lambda)^{k+1} > 1$ und wenn $k+1$ ungerade ist, ist $(1+ \tau \lambda)^{k+1} < -1$. Daher sehen wir nach jedem Zeitschritt $t_{k}$ einen Wechsel zwischen positivem und negativem Wert.
+Für $\tau > \frac{2}{|\lambda|}$ (wie in unserem Beispiel) ist $1+ \tau \lambda < -1$. Wenn $k+1$ gerade ist, ist $(1+ \tau \lambda)^{k+1} > 1$ und wenn $k+1$ ungerade ist, ist $(1+ \tau \lambda)^{k+1} < -1$. Daher sehen wir nach jedem Zeitschritt $t_{k}$ einen Wechsel zwischen positivem und negativem Wert. Mit wachsendem $k$ haben exakte Lösung und Näherung also nichts mehr miteinander zu tun. Problematisch sind dabei sicher nicht irgendwelche *Rundungsfehler*, z.B. bei der Eingabe des An-
+fangswertes. Stabilität scheint notwendig für die *Konvergenz des Verfahrens*!
+
+Das implizite Euler-Verfahren ist im Falle $\lambda <0$ für beliebiege Schrittweiten $\tau > 0$ stabil, d.h. es gilt $1 \leq k_{abs}(exEuler) \leq 1+T, \quad \lambda <0$. Im Falle $\lambda >0 $ gibt es beim impliziten Euler-Verfahren Probleme: Um Oszillationen zu
+vermeiden und auch um die Durchführbarkeit des Verfahrens zu sichern, muß die Stabilitätsbedingung $\tau < \frac{1}{\lambda}$ erfüllt sein. Wenn $\tau > \frac{1}{\lambda}$ ist, ist $\frac{1}{1-\tau \lambda}<1$ und dann wechselt wieder $x_{k+1}$ zwischen positivem und negativem Wert, bis $\frac{1}{1-\tau \lambda} \cdot t_{k+1}$ so negativ, dass die alle folgenden $x_{k+1}$ negativ sind. (Zum Ausprobieren: $\lambda = 16, f(t)=t, T=8, x_{0}=1, n=60 oder n=120$) 
+
 ### Anwendung in physikalischen Modellen
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
 
