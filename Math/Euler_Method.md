@@ -219,10 +219,10 @@ Für $\tau > \frac{2}{|\lambda|}$ (wie in unserem Beispiel) ist $1+ \tau \lambda
 fangswertes. Stabilität scheint notwendig für die *Konvergenz des Verfahrens*!
 
 Das implizite Euler-Verfahren ist im Falle $\lambda <0$ für beliebiege Schrittweiten $\tau > 0$ stabil, d.h. es gilt $1 \leq k_{abs}(exEuler) \leq 1+T, \quad \lambda <0$. Im Falle $\lambda >0 $ gibt es beim impliziten Euler-Verfahren Probleme: Um Oszillationen zu
-vermeiden und auch um die Durchführbarkeit des Verfahrens zu sichern, muß die Stabilitätsbedingung $\tau < \frac{1}{\lambda}$ erfüllt sein. Wenn $\tau > \frac{1}{\lambda}$ ist, ist $\frac{1}{1-\tau \lambda}<1$ und dann wechselt wieder $x_{k+1}$ zwischen positivem und negativem Wert, bis $\frac{1}{1-\tau \lambda} \cdot t_{k+1}$ so negativ, dass die alle folgenden $x_{k+1}$ negativ sind. (Zum Ausprobieren: $\lambda = 16, f(t)=t, T=8, x_{0}=1, n=60 oder n=120$) 
+vermeiden und auch um die Durchführbarkeit des Verfahrens zu sichern, muß die Stabilitätsbedingung $\tau < \frac{1}{\lambda}$ erfüllt sein. Wenn $\tau > \frac{1}{\lambda}$ ist, ist $\frac{1}{1-\tau \lambda}<1$ und dann wechselt wieder $x_{k+1}$ zwischen positivem und negativem Wert, bis $\frac{1}{1-\tau \lambda} \cdot f(t_{k+1})$ so negativ, dass die alle folgenden $x_{k+1}$ negativ sind. (Zum Ausprobieren: $\lambda = 16, f(t)=t, T=8, x_{0}=1, n=60 oder n=120$) 
 
 ### Anwendung in physikalischen Modellen
-Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
+Jetzt können wir sehen, wie das explizite Euler-Verfahren beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten nun den klassischen harmonischen Oszillator. Um die Newton-Gleichung mit der Euler-Methode zu lösen, fügen wir den zweiten Term hinzu.
 
 
 ```python
