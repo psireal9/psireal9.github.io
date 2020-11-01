@@ -108,7 +108,16 @@ Wir werden auch die Gitterfunktion einführen, die später verwendet wird, um di
 x_{\Delta}\left(t_{k}\right)=x_{k}, \quad k=0, \ldots, n
 \end{equation}
 
-Da (Gl.7) eine explizite Vorschrift zur Berechnung von $x_{k+1}$ liefert, nennt man dieses Verfahren auch **explizites Euler-Verfahren**.
+Da (Gl.7) eine explizite Vorschrift zur Berechnung von $x_{k+1}$ liefert, nennt man dieses Verfahren auch **explizites Euler-Verfahren**, welches sich durch den vorwärtsgenommenen Differenzenquotienten lässt.
+\begin{equation}
+\frac{x_{k+1}-x_{k}}{\tau}=\lambda x_{k}+f\left(t_{k}\right), \quad k=0, \ldots, n-1
+\end{equation}
+
+Verwendet man stattdessen den rückwartsgenommenen Differenzenquotienten, so ergibt sich das **implizite Euler-Verfahren**
+\begin{equation}
+\frac{x_{k+1}-x_{k}}{\tau}=\lambda x_{k+1}+f\left(t_{k+1}\right), \quad k=0, \ldots, n-1 \\
+\Rightarrow x_{k+1}=\frac{1}{1-\tau \lambda}\left(x_{k}+f\left(t_{k+1}\right)\right), \quad k=0, \ldots, n-1 \quad (Gl.8)
+\end{equation}
 
 ### Anwendung in physikalischen Modellen
 Jetzt können wir sehen, wie der explizite Euler-Algorithmus beim Zeichnen der Flugbahn verwendet werden kann. Wir betrachten zuerst den klassischen harmonischen Oszillator.
