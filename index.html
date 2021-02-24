@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   {% if post.sticky %}
   <div class="post">
     <h1 class="post-title">
@@ -18,7 +18,7 @@ title: Home
   {% endif %}
   {% endfor %}
   
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   {% unless post.sticky %}
   <div class="post">
     <h1 class="post-title">
