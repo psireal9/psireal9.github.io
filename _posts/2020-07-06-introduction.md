@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction
-sticky: true
+<!--sticky: true-->
 ---
 
 Obviously, it's getting harder and harder to solve scientific problems with only pen and paper. Not that people have nothing to do on a Friday evening but write down the state-space of $k$ harmonic oscillators with $n$ energy level per oscillator. Hence, I can't stress enough the significance of computer in the advancement of science. I can barely perform Gaussian elimination correctly on a 4x4 matrix so imagine a 15x15 matrix of atom coordinates of the simple methane molecule. You gotta leave that to the copmuter. However, as easy as the path to a quick answer may seem to be, the mine field is full of booby traps. Take for example, if you evaluate $f(x)=x^{3}+12 a^{2} x-6 a x^{2}-8 a^{3}=(x-2 a)^{3}$ with the parameter $a = 49999.5$ at $x_{0}=1000000.05$ with 2 different but equivalent transformations, you wil get immensely different results! 
