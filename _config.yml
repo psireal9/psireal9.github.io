@@ -5,6 +5,7 @@ description:         'A place to wander and wonder.'
 url:                 https://psireal9.github.io
 baseurl:             '/lanyon/'
 paginate:            2
+paginate_path:       "/blog/page:num/"
 permalink:           pretty
 
 # About/contact
