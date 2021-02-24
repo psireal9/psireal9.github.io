@@ -3,6 +3,13 @@ layout: default
 title: Home
 ---
 
+<MAP NAME="index">
+<AREA 
+HREF="/_posts/2020-07-06-introduction.md" ALT="My Popup"
+COORDS="10,10,120,120" SHAPE=RECT 
+onClick="return popup(this, 'gloss')">
+</MAP>
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
