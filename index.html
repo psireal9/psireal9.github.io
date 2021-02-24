@@ -18,20 +18,6 @@ title: Home
   {% endif %}
   {% endfor %}
   
-  {% for post in paginator.posts %}
-  {% unless post.sticky %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    {{ post.content }}
-  </div>
-  {% endunless %}
-  {% endfor %}
-</div>
 
 <div class="pagination">
   {% if paginator.next_page %}
