@@ -50,6 +50,7 @@ onClick="return popup(this, 'gloss')">
   
 
 <div class="pagination">
+  <a class="pagination-item intro" href="{{ Document/Introduction }}">Introduction</a>
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
   {% else %}
