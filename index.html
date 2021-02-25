@@ -19,9 +19,17 @@ return false;
 //-->
 </SCRIPT>
 
-<A 
+<!--<A 
 HREF="Document/Introduction" 
-onClick="return popup(this, 'notes')">my popup</A>
+onClick="return popup(this, 'notes')">my popup</A>-->
+
+<MAP NAME="index">
+<AREA 
+HREF="Document/Introduction" ALT="My Popup"
+COORDS="10,10,120,120" SHAPE=RECT 
+onClick="return popup(this, 'gloss')">
+<AREA SHAPE=DEFAULT NOHREF>
+</MAP>
 
 <div class="posts">
   {% for post in paginator.posts %}
