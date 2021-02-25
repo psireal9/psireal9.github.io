@@ -22,7 +22,14 @@ return false;
 <!--<A 
 HREF="Document/Introduction" 
 onClick="return popup(this, 'notes')">my popup</A>-->
-
+<MAP NAME="index">
+<AREA 
+HREF="Document/Introduction" ALT="My Popup"
+COORDS="10,10,120,120" SHAPE=RECT 
+onClick="return popup(this, 'gloss')">
+<AREA SHAPE=DEFAULT NOHREF>
+</MAP>
+<IMG SRC="images/rectangle.png" HEIGHT=130 WIDTH=190 ALT="Image Map Example"  BORDER="0" USEMAP="#index">
 
   
 <div class="posts">
@@ -44,28 +51,12 @@ onClick="return popup(this, 'notes')">my popup</A>-->
 
 <div class="pagination">
   {% if paginator.next_page %}
-  <MAP NAME="index">
-<AREA 
-HREF="Document/Introduction" ALT="My Popup"
-COORDS="10,10,120,120" SHAPE=RECT 
-onClick="return popup(this, 'gloss')">
-<AREA SHAPE=DEFAULT NOHREF>
-</MAP>
-<IMG SRC="images/rectangle.png" HEIGHT=130 WIDTH=190 ALT="Image Map Example"  BORDER="0" USEMAP="#index">
     <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-  <MAP NAME="index">
-<AREA 
-HREF="Document/Introduction" ALT="My Popup"
-COORDS="10,10,120,120" SHAPE=RECT 
-onClick="return popup(this, 'gloss')">
-<AREA SHAPE=DEFAULT NOHREF>
-</MAP>
-<IMG SRC="images/rectangle.png" HEIGHT=130 WIDTH=190 ALT="Image Map Example"  BORDER="0" USEMAP="#index">
       <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
     {% else %}
       <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
